@@ -2,15 +2,20 @@
 
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Italia Bella 2026 — Olivieri Family Trip</title>
-  <meta name="description" content="Day-by-day itinerary for the Olivieri family Italy trip, June 28 – July 6, 2026. Rome, Florence, and Venice." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
-  <style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Italia Bella 2026 — Olivieri Family Trip</title>
+<meta name="description" content="Day-by-day itinerary for the Olivieri family Italy trip, June 28 – July 6, 2026. Rome, Florence, and Venice." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+<style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    *::before, *::after { content: none !important; }
+    [hidden] { display: none !important; }
+    q, blockquote { quotes: none; }
+    q::before, q::after, blockquote::before, blockquote::after { content: '' !important; content: none !important; }
+    ul, ol { list-style: none; }
     html { scroll-behavior: smooth; }
     :root {
       --ink: #1a1006; --ink-mid: #3d2e18; --stone: #4a3d2a; --stone-light: #6b5c42;
@@ -188,522 +193,504 @@ footer a { color: var(--parchment); }
 <a href="#main" class="skip-link">Skip to main content</a>
 
 <header role="banner">
-  <p class="header-eyebrow">Olivieri Family · Tauck Bridges · June 2026</p>
-  <h1>Italia Bella</h1>
-  <p class="header-sub">Rome &nbsp;·&nbsp; Florence &nbsp;·&nbsp; Venice &nbsp;·&nbsp; June 28 – July 6, 2026</p>
+<p class="header-eyebrow">Olivieri Family · Tauck Bridges · June 2026</p>
+<h1>Italia Bella</h1>
+<p class="header-sub">Rome &nbsp;·&nbsp; Florence &nbsp;·&nbsp; Venice &nbsp;·&nbsp; June 28 – July 6, 2026</p>
 </header>
 
 <nav class="tab-nav" role="tablist" aria-label="Trip sections">
-  <button class="tab-btn" role="tab" id="tab-itin"   aria-selected="true"  aria-controls="panel-itin"   onclick="showTab('itin')">📅 Itinerary</button>
-  <button class="tab-btn" role="tab" id="tab-hotels" aria-selected="false" aria-controls="panel-hotels" onclick="showTab('hotels')">🏨 Hotels</button>
-  <button class="tab-btn" role="tab" id="tab-info"   aria-selected="false" aria-controls="panel-info"   onclick="showTab('info')">📋 Essentials</button>
+<button class="tab-btn" role="tab" id="tab-itin"   aria-selected="true"  aria-controls="panel-itin"   onclick="showTab('itin')">📅 Itinerary</button>
+<button class="tab-btn" role="tab" id="tab-hotels" aria-selected="false" aria-controls="panel-hotels" onclick="showTab('hotels')">🏨 Hotels</button>
+<button class="tab-btn" role="tab" id="tab-info"   aria-selected="false" aria-controls="panel-info"   onclick="showTab('info')">📋 Essentials</button>
 </nav>
 
 <main id="main">
 
-  <div id="panel-itin" class="tab-panel active" role="tabpanel" aria-labelledby="tab-itin">
-    <div class="itinerary-wrap">
-      <nav class="day-nav" role="tablist" aria-label="Select a day" aria-orientation="vertical">
-        <button class="day-nav-btn" role="tab" aria-selected="true"  aria-controls="day-0" onclick="showDay(0)"><span class="btn-emoji" aria-hidden="true">✈️</span><span class="btn-label">Pre-Tour</span><span class="btn-date">Jun 28</span></button>
-        <button class="day-nav-btn" role="tab" aria-selected="false" aria-controls="day-1" onclick="showDay(1)"><span class="btn-emoji" aria-hidden="true">🏛️</span><span class="btn-label">Day 1</span><span class="btn-date">Jun 29</span></button>
-        <button class="day-nav-btn" role="tab" aria-selected="false" aria-controls="day-2" onclick="showDay(2)"><span class="btn-emoji" aria-hidden="true">⛪</span><span class="btn-label">Day 2</span><span class="btn-date">Jun 30</span></button>
-        <button class="day-nav-btn" role="tab" aria-selected="false" aria-controls="day-3" onclick="showDay(3)"><span class="btn-emoji" aria-hidden="true">🚌</span><span class="btn-label">Day 3</span><span class="btn-date">Jul 1</span></button>
-        <button class="day-nav-btn" role="tab" aria-selected="false" aria-controls="day-4" onclick="showDay(4)"><span class="btn-emoji" aria-hidden="true">🗼</span><span class="btn-label">Day 4</span><span class="btn-date">Jul 2</span></button>
-        <button class="day-nav-btn" role="tab" aria-selected="false" aria-controls="day-5" onclick="showDay(5)"><span class="btn-emoji" aria-hidden="true">🎨</span><span class="btn-label">Day 5</span><span class="btn-date">Jul 3</span></button>
-        <button class="day-nav-btn" role="tab" aria-selected="false" aria-controls="day-6" onclick="showDay(6)"><span class="btn-emoji" aria-hidden="true">🚄</span><span class="btn-label">Day 6</span><span class="btn-date">Jul 4</span></button>
-        <button class="day-nav-btn" role="tab" aria-selected="false" aria-controls="day-7" onclick="showDay(7)"><span class="btn-emoji" aria-hidden="true">🚤</span><span class="btn-label">Day 7</span><span class="btn-date">Jul 5</span></button>
-        <button class="day-nav-btn" role="tab" aria-selected="false" aria-controls="day-8" onclick="showDay(8)"><span class="btn-emoji" aria-hidden="true">🏠</span><span class="btn-label">Day 8</span><span class="btn-date">Jul 6</span></button>
-      </nav>
+<div id="panel-itin" class="tab-panel active" role="tabpanel" aria-labelledby="tab-itin">
+<div class="itinerary-wrap">
+<nav class="day-nav" role="tablist" aria-label="Select a day" aria-orientation="vertical">
+<button class="day-nav-btn" role="tab" aria-selected="true"  aria-controls="day-0" onclick="showDay(0)"><span class="btn-emoji" aria-hidden="true">✈️</span><span class="btn-label">Pre-Tour</span><span class="btn-date">Jun 28</span></button>
+<button class="day-nav-btn" role="tab" aria-selected="false" aria-controls="day-1" onclick="showDay(1)"><span class="btn-emoji" aria-hidden="true">🏛️</span><span class="btn-label">Day 1</span><span class="btn-date">Jun 29</span></button>
+<button class="day-nav-btn" role="tab" aria-selected="false" aria-controls="day-2" onclick="showDay(2)"><span class="btn-emoji" aria-hidden="true">⛪</span><span class="btn-label">Day 2</span><span class="btn-date">Jun 30</span></button>
+<button class="day-nav-btn" role="tab" aria-selected="false" aria-controls="day-3" onclick="showDay(3)"><span class="btn-emoji" aria-hidden="true">🚌</span><span class="btn-label">Day 3</span><span class="btn-date">Jul 1</span></button>
+<button class="day-nav-btn" role="tab" aria-selected="false" aria-controls="day-4" onclick="showDay(4)"><span class="btn-emoji" aria-hidden="true">🗼</span><span class="btn-label">Day 4</span><span class="btn-date">Jul 2</span></button>
+<button class="day-nav-btn" role="tab" aria-selected="false" aria-controls="day-5" onclick="showDay(5)"><span class="btn-emoji" aria-hidden="true">🎨</span><span class="btn-label">Day 5</span><span class="btn-date">Jul 3</span></button>
+<button class="day-nav-btn" role="tab" aria-selected="false" aria-controls="day-6" onclick="showDay(6)"><span class="btn-emoji" aria-hidden="true">🚄</span><span class="btn-label">Day 6</span><span class="btn-date">Jul 4</span></button>
+<button class="day-nav-btn" role="tab" aria-selected="false" aria-controls="day-7" onclick="showDay(7)"><span class="btn-emoji" aria-hidden="true">🚤</span><span class="btn-label">Day 7</span><span class="btn-date">Jul 5</span></button>
+<button class="day-nav-btn" role="tab" aria-selected="false" aria-controls="day-8" onclick="showDay(8)"><span class="btn-emoji" aria-hidden="true">🏠</span><span class="btn-label">Day 8</span><span class="btn-date">Jul 6</span></button>
+</nav>
 
-```
-  <div class="day-content"><section id="day-0" class="day-section active" aria-labelledby="h0">
-      <p class="day-eyebrow">Pre-Tour · Sunday, June 28</p>
-      <h2 id="h0">✈️ New York → Rome</h2>
-      <p class="day-intro">Arrival day. Get settled at the hotel, then enjoy a private Colosseum tour and rooftop dinner before the official Tauck program begins tomorrow.</p>
-      <ul class="stops" aria-label="June 28 stops">
-        <li class="stop" data-type="transport">
-          <div class="stop-inner"><div class="stop-icon" aria-hidden="true">✈️</div>
-          <div class="stop-body"><p class="stop-time">Depart</p><h3>JFK International Airport — New York</h3>
-          <p class="stop-note">Fly to Rome Leonardo da Vinci Airport (FCO). Flight details TBD. Arrive Rome the following morning.</p>
-          <a href="https://www.google.com/maps/search/JFK+Airport+Jamaica+New+York" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open JFK Airport in Google Maps (opens new tab)">📍 Google Maps</a></div></div>
-        </li>
-        <li class="stop" data-type="transport">
-          <div class="stop-inner"><div class="stop-icon" aria-hidden="true">🛬</div>
-          <div class="stop-body"><p class="stop-time">Arrival</p><h3>Fiumicino Airport (FCO) — Rome</h3>
-          <p class="stop-note">Clear immigration and customs. Transfer via Marco Tonnicchia Car Service — approximately 45 minutes to the hotel. State you are traveling with Tauck.</p>
-          <a href="https://www.google.com/maps/search/Fiumicino+Airport+Rome+Italy" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open Fiumicino Airport in Google Maps (opens new tab)">📍 Google Maps</a></div></div>
-        </li>
-        <li class="stop" data-type="hotel">
-          <div class="stop-inner"><div class="stop-icon" aria-hidden="true">🏨</div>
-          <div class="stop-body"><p class="stop-time">Check-in · 3:00 PM</p><h3>Aleph Rome Hotel – Curio by Hilton</h3>
-          <p class="stop-note">Via di San Basilio 15, 00187 Roma &nbsp;·&nbsp; Tel: +39 06 4229001 &nbsp;·&nbsp; Breakfast included &nbsp;·&nbsp; Reservation guaranteed for late arrival.</p>
-          <a href="https://www.google.com/maps/search/Aleph+Rome+Hotel+Curio+Hilton+Via+San+Basilio" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open Aleph Rome Hotel in Google Maps (opens new tab)">📍 Google Maps</a></div></div>
-        </li>
-        <li class="stop" data-type="activity">
-          <div class="stop-inner"><div class="stop-icon" aria-hidden="true">🏟️</div>
-          <div class="stop-body"><p class="stop-time">4:00 PM – 7:00 PM</p><h3>Colosseum Evening Tour</h3>
-          <p class="stop-note">Private guided evening tour of the Colosseum — one of the most iconic monuments of the ancient world. Allow travel time from the hotel before 4:00 PM. The dinner restaurant is directly across the street afterward.</p>
-          <a href="https://www.google.com/maps/search/Colosseum+Rome+Piazza+del+Colosseo" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open Colosseum in Google Maps (opens new tab)">📍 Google Maps</a></div></div>
-        </li>
-        <li class="stop" data-type="dining">
-          <div class="stop-inner"><div class="stop-icon" aria-hidden="true">🍷</div>
-          <div class="stop-body"><p class="stop-time">7:30 PM · Reservation Confirmed</p><h3>Royal Art Café Roma — Roof Garden Dinner</h3>
-          <p class="stop-note">Anthony Olivieri × 5 people &nbsp;·&nbsp; Roof Garden Terrace Table with best view &nbsp;·&nbsp; Experience Menu chosen on site &nbsp;·&nbsp; Welcome drink, water, Italian wine, beer or cocktails, coffee or cappuccino included &nbsp;·&nbsp; Piazza Del Colosseo 1, 00184 Roma &nbsp;·&nbsp; Contact: federico@royalartcafe.it</p>
-          <a href="https://www.google.com/maps/search/Royal+Art+Cafe+Roma+Piazza+del+Colosseo+1" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open Royal Art Café Roma in Google Maps (opens new tab)">📍 Google Maps</a></div></div>
-        </li>
-      </ul>
-    </section>
+<div class="day-content"><section id="day-0" class="day-section active" aria-labelledby="h0">
+<p class="day-eyebrow">Pre-Tour · Sunday, June 28</p>
+<h2 id="h0">✈️ New York → Rome</h2>
+<p class="day-intro">Arrival day. Get settled at the hotel, then enjoy a private Colosseum tour and rooftop dinner before the official Tauck program begins tomorrow.</p>
+<ul class="stops" aria-label="June 28 stops">
+<li class="stop" data-type="transport">
+<div class="stop-inner"><div class="stop-icon" aria-hidden="true">✈️</div>
+<div class="stop-body"><p class="stop-time">Depart</p><h3>JFK International Airport — New York</h3>
+<p class="stop-note">Fly to Rome Leonardo da Vinci Airport (FCO). Flight details TBD. Arrive Rome the following morning.</p>
+<a href="https://www.google.com/maps/search/JFK+Airport+Jamaica+New+York" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open JFK Airport in Google Maps (opens new tab)">📍 Google Maps</a></div></div>
+</li>
+<li class="stop" data-type="transport">
+<div class="stop-inner"><div class="stop-icon" aria-hidden="true">🛬</div>
+<div class="stop-body"><p class="stop-time">Arrival</p><h3>Fiumicino Airport (FCO) — Rome</h3>
+<p class="stop-note">Clear immigration and customs. Transfer via Marco Tonnicchia Car Service — approximately 45 minutes to the hotel. State you are traveling with Tauck.</p>
+<a href="https://www.google.com/maps/search/Fiumicino+Airport+Rome+Italy" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open Fiumicino Airport in Google Maps (opens new tab)">📍 Google Maps</a></div></div>
+</li>
+<li class="stop" data-type="hotel">
+<div class="stop-inner"><div class="stop-icon" aria-hidden="true">🏨</div>
+<div class="stop-body"><p class="stop-time">Check-in · 3:00 PM</p><h3>Aleph Rome Hotel – Curio by Hilton</h3>
+<p class="stop-note">Via di San Basilio 15, 00187 Roma &nbsp;·&nbsp; Tel: +39 06 4229001 &nbsp;·&nbsp; Breakfast included &nbsp;·&nbsp; Reservation guaranteed for late arrival.</p>
+<a href="https://www.google.com/maps/search/Aleph+Rome+Hotel+Curio+Hilton+Via+San+Basilio" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open Aleph Rome Hotel in Google Maps (opens new tab)">📍 Google Maps</a></div></div>
+</li>
+<li class="stop" data-type="activity">
+<div class="stop-inner"><div class="stop-icon" aria-hidden="true">🏟️</div>
+<div class="stop-body"><p class="stop-time">4:00 PM – 7:00 PM</p><h3>Colosseum Evening Tour</h3>
+<p class="stop-note">Private guided evening tour of the Colosseum — one of the most iconic monuments of the ancient world. Allow travel time from the hotel before 4:00 PM. The dinner restaurant is directly across the street afterward.</p>
+<a href="https://www.google.com/maps/search/Colosseum+Rome+Piazza+del+Colosseo" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open Colosseum in Google Maps (opens new tab)">📍 Google Maps</a></div></div>
+</li>
+<li class="stop" data-type="dining">
+<div class="stop-inner"><div class="stop-icon" aria-hidden="true">🍷</div>
+<div class="stop-body"><p class="stop-time">7:30 PM · Reservation Confirmed</p><h3>Royal Art Café Roma — Roof Garden Dinner</h3>
+<p class="stop-note">Anthony Olivieri × 5 people &nbsp;·&nbsp; Roof Garden Terrace Table with best view &nbsp;·&nbsp; Experience Menu chosen on site &nbsp;·&nbsp; Welcome drink, water, Italian wine, beer or cocktails, coffee or cappuccino included &nbsp;·&nbsp; Piazza Del Colosseo 1, 00184 Roma &nbsp;·&nbsp; Contact: federico@royalartcafe.it</p>
+<a href="https://www.google.com/maps/search/Royal+Art+Cafe+Roma+Piazza+del+Colosseo+1" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open Royal Art Café Roma in Google Maps (opens new tab)">📍 Google Maps</a></div></div>
+</li>
+</ul>
+</section>
 
-    
-    <section id="day-1" class="day-section" aria-labelledby="h1" hidden>
-      <p class="day-eyebrow">Day 1 · Monday, June 29</p>
-      <h2 id="h1">🏛️ Rome — Tour Begins</h2>
-      <span class="meals-badge" aria-label="Meals included: Dinner">🍴 Dinner Included</span>
-      <div class="alert" role="note"><span class="alert-icon" aria-hidden="true">📌</span>
-      <p>The after-hours Borghese Gallery visit is confirmed for either <strong>Day 1 or Day 2</strong>. Your Tauck Director will confirm on arrival. If it falls on Day 1, the welcome dinner shifts to Day 2.</p></div>
-      <ul class="stops" aria-label="June 29 stops">
-        <li class="stop" data-type="activity">
-          <div class="stop-inner"><div class="stop-icon" aria-hidden="true">🏛️</div>
-          <div class="stop-body"><p class="stop-time">2:00 PM · Tour Officially Begins</p><h3>Imperial Rome Guided Tour</h3>
-          <p class="stop-note">Insider's guided tour of ancient Rome — iconic landmarks and hidden gems. Colosseum and Roman Forum exterior included.</p>
-          <a href="https://www.google.com/maps/search/Roman+Forum+Colosseum+Rome" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open Imperial Rome area in Google Maps (opens new tab)">📍 Google Maps</a></div></div>
-        </li>
-        <li class="stop" data-type="dining">
-          <div class="stop-inner"><div class="stop-icon" aria-hidden="true">🥂</div>
-          <div class="stop-body"><p class="stop-time">Evening</p><h3>Welcome Reception &amp; Dinner</h3>
-          <p class="stop-note">Meet your fellow travelers for the welcome dinner. Exact location and time shared by your Tauck Director on arrival at the hotel.</p>
-          <a href="https://www.google.com/maps/search/Rome+Italy+city+center" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open Rome center in Google Maps (opens new tab)">📍 Rome Center on Maps</a></div></div>
-        </li>
-        <li class="stop" data-type="activity">
-          <div class="stop-inner"><div class="stop-icon" aria-hidden="true">🎨</div>
-          <div class="stop-body"><p class="stop-time">Evening* (Day 1 or Day 2)</p><h3>Borghese Gallery — Private After-Hours Visit</h3>
-          <p class="stop-note">One of the world's great art galleries. Bernini sculptures, Caravaggio, Raphael, Titian, and Rubens. Piazzale Scipione Borghese 5, Roma.</p>
-          <a href="https://www.google.com/maps/search/Borghese+Gallery+Rome+Piazzale+Scipione+Borghese" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open Borghese Gallery in Google Maps (opens new tab)">📍 Google Maps</a></div></div>
-        </li>
-        <li class="stop" data-type="hotel">
-          <div class="stop-inner"><div class="stop-icon" aria-hidden="true">🏨</div>
-          <div class="stop-body"><p class="stop-time">Overnight</p><h3>Aleph Rome Hotel – Curio by Hilton</h3>
-          <p class="stop-note">Via di San Basilio 15, 00187 Roma &nbsp;·&nbsp; Tel: +39 06 4229001</p>
-          <a href="https://www.google.com/maps/search/Aleph+Rome+Hotel+Curio+Hilton+Via+San+Basilio" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open Aleph Rome Hotel in Google Maps (opens new tab)">📍 Google Maps</a></div></div>
-        </li>
-      </ul>
-    </section>
+<section id="day-1" class="day-section" aria-labelledby="h1" hidden>
+<p class="day-eyebrow">Day 1 · Monday, June 29</p>
+<h2 id="h1">🏛️ Rome — Tour Begins</h2>
+<span class="meals-badge" aria-label="Meals included: Dinner">🍴 Dinner Included</span>
+<div class="alert" role="note"><span class="alert-icon" aria-hidden="true">📌</span>
+<p>The after-hours Borghese Gallery visit is confirmed for either <strong>Day 1 or Day 2</strong>. Your Tauck Director will confirm on arrival. If it falls on Day 1, the welcome dinner shifts to Day 2.</p></div>
+<ul class="stops" aria-label="June 29 stops">
+<li class="stop" data-type="activity">
+<div class="stop-inner"><div class="stop-icon" aria-hidden="true">🏛️</div>
+<div class="stop-body"><p class="stop-time">2:00 PM · Tour Officially Begins</p><h3>Imperial Rome Guided Tour</h3>
+<p class="stop-note">Insider's guided tour of ancient Rome — iconic landmarks and hidden gems. Colosseum and Roman Forum exterior included.</p>
+<a href="https://www.google.com/maps/search/Roman+Forum+Colosseum+Rome" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open Imperial Rome area in Google Maps (opens new tab)">📍 Google Maps</a></div></div>
+</li>
+<li class="stop" data-type="dining">
+<div class="stop-inner"><div class="stop-icon" aria-hidden="true">🥂</div>
+<div class="stop-body"><p class="stop-time">Evening</p><h3>Welcome Reception &amp; Dinner</h3>
+<p class="stop-note">Meet your fellow travelers for the welcome dinner. Exact location and time shared by your Tauck Director on arrival at the hotel.</p>
+<a href="https://www.google.com/maps/search/Rome+Italy+city+center" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open Rome center in Google Maps (opens new tab)">📍 Rome Center on Maps</a></div></div>
+</li>
+<li class="stop" data-type="activity">
+<div class="stop-inner"><div class="stop-icon" aria-hidden="true">🎨</div>
+<div class="stop-body"><p class="stop-time">Evening* (Day 1 or Day 2)</p><h3>Borghese Gallery — Private After-Hours Visit</h3>
+<p class="stop-note">One of the world's great art galleries. Bernini sculptures, Caravaggio, Raphael, Titian, and Rubens. Piazzale Scipione Borghese 5, Roma.</p>
+<a href="https://www.google.com/maps/search/Borghese+Gallery+Rome+Piazzale+Scipione+Borghese" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open Borghese Gallery in Google Maps (opens new tab)">📍 Google Maps</a></div></div>
+</li>
+<li class="stop" data-type="hotel">
+<div class="stop-inner"><div class="stop-icon" aria-hidden="true">🏨</div>
+<div class="stop-body"><p class="stop-time">Overnight</p><h3>Aleph Rome Hotel – Curio by Hilton</h3>
+<p class="stop-note">Via di San Basilio 15, 00187 Roma &nbsp;·&nbsp; Tel: +39 06 4229001</p>
+<a href="https://www.google.com/maps/search/Aleph+Rome+Hotel+Curio+Hilton+Via+San+Basilio" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open Aleph Rome Hotel in Google Maps (opens new tab)">📍 Google Maps</a></div></div>
+</li>
+</ul>
+</section>
 
-    
-    <section id="day-2" class="day-section" aria-labelledby="h2" hidden>
-      <p class="day-eyebrow">Day 2 · Tuesday, June 30</p>
-      <h2 id="h2">⛪ Vatican City &amp; Borghese Gallery</h2>
-      <span class="meals-badge" aria-label="Meals included: Breakfast">🍴 Breakfast Included</span>
-      <div class="alert" role="note"><span class="alert-icon" aria-hidden="true">👗</span>
-      <p><strong>Dress code:</strong> St. Peter's Basilica strictly requires knees and shoulders covered. No shorts or tank tops. A lightweight scarf in your bag is the easiest solution.</p></div>
-      <ul class="stops" aria-label="June 30 stops">
-        <li class="stop" data-type="activity">
-          <div class="stop-inner"><div class="stop-icon" aria-hidden="true">🗺️</div>
-          <div class="stop-body"><p class="stop-time">Morning</p><h3>Vatican Museums</h3>
-          <p class="stop-note">Guided tour through the Candelabra Gallery, Map Gallery, Tapestries Gallery, and the Sistine Chapel — home to Michelangelo's extraordinary ceiling.</p>
-          <a href="https://www.google.com/maps/search/Vatican+Museums+Rome" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open Vatican Museums in Google Maps (opens new tab)">📍 Google Maps</a></div></div>
-        </li>
-        <li class="stop" data-type="activity">
-          <div class="stop-inner"><div class="stop-icon" aria-hidden="true">⛪</div>
-          <div class="stop-body"><p class="stop-time">Morning</p><h3>St. Peter's Basilica</h3>
-          <p class="stop-note">One of the largest churches in the world. Dress code strictly enforced — knees and shoulders covered required.</p>
-          <a href="https://www.google.com/maps/search/St+Peters+Basilica+Vatican+City" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open St. Peter's Basilica in Google Maps (opens new tab)">📍 Google Maps</a></div></div>
-        </li>
-        <li class="stop" data-type="dining">
-          <div class="stop-inner"><div class="stop-icon" aria-hidden="true">🍦</div>
-          <div class="stop-body"><p class="stop-time">Midday</p><h3>Gelato-Making Lesson</h3>
-          <p class="stop-note">Hands-on class at a local cooking school near Piazza Navona. Learn to make authentic Italian gelato from scratch.</p>
-          <a href="https://www.google.com/maps/search/Piazza+Navona+Rome" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open Piazza Navona in Google Maps (opens new tab)">📍 Google Maps</a></div></div>
-        </li>
-        <li class="stop" data-type="activity">
-          <div class="stop-inner"><div class="stop-icon" aria-hidden="true">🎨</div>
-          <div class="stop-body"><p class="stop-time">Evening* (Day 1 or Day 2)</p><h3>Borghese Gallery — Private After-Hours Visit</h3>
-          <p class="stop-note">Private after-hours guided visit. Bernini, Caravaggio, Raphael, Titian, and Rubens. Piazzale Scipione Borghese 5, Roma.</p>
-          <a href="https://www.google.com/maps/search/Borghese+Gallery+Rome+Piazzale+Scipione+Borghese" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open Borghese Gallery in Google Maps (opens new tab)">📍 Google Maps</a></div></div>
-        </li>
-        <li class="stop" data-type="hotel">
-          <div class="stop-inner"><div class="stop-icon" aria-hidden="true">🏨</div>
-          <div class="stop-body"><p class="stop-time">Overnight</p><h3>Aleph Rome Hotel – Curio by Hilton</h3>
-          <p class="stop-note">Via di San Basilio 15, 00187 Roma &nbsp;·&nbsp; Tel: +39 06 4229001</p>
-          <a href="https://www.google.com/maps/search/Aleph+Rome+Hotel+Curio+Hilton+Via+San+Basilio" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open Aleph Rome Hotel in Google Maps (opens new tab)">📍 Google Maps</a></div></div>
-        </li>
-      </ul>
-    </section>
+<section id="day-2" class="day-section" aria-labelledby="h2" hidden>
+<p class="day-eyebrow">Day 2 · Tuesday, June 30</p>
+<h2 id="h2">⛪ Vatican City &amp; Borghese Gallery</h2>
+<span class="meals-badge" aria-label="Meals included: Breakfast">🍴 Breakfast Included</span>
+<div class="alert" role="note"><span class="alert-icon" aria-hidden="true">👗</span>
+<p><strong>Dress code:</strong> St. Peter's Basilica strictly requires knees and shoulders covered. No shorts or tank tops. A lightweight scarf in your bag is the easiest solution.</p></div>
+<ul class="stops" aria-label="June 30 stops">
+<li class="stop" data-type="activity">
+<div class="stop-inner"><div class="stop-icon" aria-hidden="true">🗺️</div>
+<div class="stop-body"><p class="stop-time">Morning</p><h3>Vatican Museums</h3>
+<p class="stop-note">Guided tour through the Candelabra Gallery, Map Gallery, Tapestries Gallery, and the Sistine Chapel — home to Michelangelo's extraordinary ceiling.</p>
+<a href="https://www.google.com/maps/search/Vatican+Museums+Rome" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open Vatican Museums in Google Maps (opens new tab)">📍 Google Maps</a></div></div>
+</li>
+<li class="stop" data-type="activity">
+<div class="stop-inner"><div class="stop-icon" aria-hidden="true">⛪</div>
+<div class="stop-body"><p class="stop-time">Morning</p><h3>St. Peter's Basilica</h3>
+<p class="stop-note">One of the largest churches in the world. Dress code strictly enforced — knees and shoulders covered required.</p>
+<a href="https://www.google.com/maps/search/St+Peters+Basilica+Vatican+City" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open St. Peter's Basilica in Google Maps (opens new tab)">📍 Google Maps</a></div></div>
+</li>
+<li class="stop" data-type="dining">
+<div class="stop-inner"><div class="stop-icon" aria-hidden="true">🍦</div>
+<div class="stop-body"><p class="stop-time">Midday</p><h3>Gelato-Making Lesson</h3>
+<p class="stop-note">Hands-on class at a local cooking school near Piazza Navona. Learn to make authentic Italian gelato from scratch.</p>
+<a href="https://www.google.com/maps/search/Piazza+Navona+Rome" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open Piazza Navona in Google Maps (opens new tab)">📍 Google Maps</a></div></div>
+</li>
+<li class="stop" data-type="activity">
+<div class="stop-inner"><div class="stop-icon" aria-hidden="true">🎨</div>
+<div class="stop-body"><p class="stop-time">Evening* (Day 1 or Day 2)</p><h3>Borghese Gallery — Private After-Hours Visit</h3>
+<p class="stop-note">Private after-hours guided visit. Bernini, Caravaggio, Raphael, Titian, and Rubens. Piazzale Scipione Borghese 5, Roma.</p>
+<a href="https://www.google.com/maps/search/Borghese+Gallery+Rome+Piazzale+Scipione+Borghese" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open Borghese Gallery in Google Maps (opens new tab)">📍 Google Maps</a></div></div>
+</li>
+<li class="stop" data-type="hotel">
+<div class="stop-inner"><div class="stop-icon" aria-hidden="true">🏨</div>
+<div class="stop-body"><p class="stop-time">Overnight</p><h3>Aleph Rome Hotel – Curio by Hilton</h3>
+<p class="stop-note">Via di San Basilio 15, 00187 Roma &nbsp;·&nbsp; Tel: +39 06 4229001</p>
+<a href="https://www.google.com/maps/search/Aleph+Rome+Hotel+Curio+Hilton+Via+San+Basilio" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open Aleph Rome Hotel in Google Maps (opens new tab)">📍 Google Maps</a></div></div>
+</li>
+</ul>
+</section>
 
-    
-    <section id="day-3" class="day-section" aria-labelledby="h3" hidden>
-      <p class="day-eyebrow">Day 3 · Wednesday, July 1</p>
-      <h2 id="h3">🚌 Orvieto → Florence</h2>
-      <span class="meals-badge" aria-label="Meals included: Breakfast and Dinner">🍴 Breakfast &amp; Dinner Included</span>
-      <ul class="stops" aria-label="July 1 stops">
-        <li class="stop" data-type="activity">
-          <div class="stop-inner"><div class="stop-icon" aria-hidden="true">🪨</div>
-          <div class="stop-body"><p class="stop-time">Morning</p><h3>Orvieto Underground Tour</h3>
-          <p class="stop-note">A dramatic walled city on a volcanic plateau. Guided tour beneath the cobblestones through medieval tunnels and Etruscan caves dating back thousands of years.</p>
-          <a href="https://www.google.com/maps/search/Orvieto+Underground+Umbria+Italy" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open Orvieto in Google Maps (opens new tab)">📍 Google Maps</a></div></div>
-        </li>
-        <li class="stop" data-type="activity">
-          <div class="stop-inner"><div class="stop-icon" aria-hidden="true">🚗</div>
-          <div class="stop-body"><p class="stop-time">Afternoon · Arrive Florence</p><h3>Vintage Fiat 500 City Orientation</h3>
-          <p class="stop-note">Arrive in Florence, birthplace of the Renaissance. Panoramic city orientation in a vintage Fiat 500. Hotel is steps from Piazza della Signoria and the Uffizi Gallery.</p>
-          <a href="https://www.google.com/maps/search/Piazza+della+Signoria+Florence+Italy" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open Piazza della Signoria in Google Maps (opens new tab)">📍 Google Maps</a></div></div>
-        </li>
-        <li class="stop" data-type="hotel">
-          <div class="stop-inner"><div class="stop-icon" aria-hidden="true">🏨</div>
-          <div class="stop-body"><p class="stop-time">Check-in · 3-Night Stay</p><h3>The Excelsior Florence</h3>
-          <p class="stop-note">Piazza Ognissanti 3, Florence 50123 &nbsp;·&nbsp; Tel: +39 055 27151 &nbsp;·&nbsp; Luxury hotel steps from the Arno River.</p>
-          <a href="https://www.google.com/maps/search/Excelsior+Florence+Piazza+Ognissanti" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open The Excelsior Florence in Google Maps (opens new tab)">📍 Google Maps</a></div></div>
-        </li>
-      </ul>
-    </section>
+<section id="day-3" class="day-section" aria-labelledby="h3" hidden>
+<p class="day-eyebrow">Day 3 · Wednesday, July 1</p>
+<h2 id="h3">🚌 Orvieto → Florence</h2>
+<span class="meals-badge" aria-label="Meals included: Breakfast and Dinner">🍴 Breakfast &amp; Dinner Included</span>
+<ul class="stops" aria-label="July 1 stops">
+<li class="stop" data-type="activity">
+<div class="stop-inner"><div class="stop-icon" aria-hidden="true">🪨</div>
+<div class="stop-body"><p class="stop-time">Morning</p><h3>Orvieto Underground Tour</h3>
+<p class="stop-note">A dramatic walled city on a volcanic plateau. Guided tour beneath the cobblestones through medieval tunnels and Etruscan caves dating back thousands of years.</p>
+<a href="https://www.google.com/maps/search/Orvieto+Underground+Umbria+Italy" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open Orvieto in Google Maps (opens new tab)">📍 Google Maps</a></div></div>
+</li>
+<li class="stop" data-type="activity">
+<div class="stop-inner"><div class="stop-icon" aria-hidden="true">🚗</div>
+<div class="stop-body"><p class="stop-time">Afternoon · Arrive Florence</p><h3>Vintage Fiat 500 City Orientation</h3>
+<p class="stop-note">Arrive in Florence, birthplace of the Renaissance. Panoramic city orientation in a vintage Fiat 500. Hotel is steps from Piazza della Signoria and the Uffizi Gallery.</p>
+<a href="https://www.google.com/maps/search/Piazza+della+Signoria+Florence+Italy" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open Piazza della Signoria in Google Maps (opens new tab)">📍 Google Maps</a></div></div>
+</li>
+<li class="stop" data-type="hotel">
+<div class="stop-inner"><div class="stop-icon" aria-hidden="true">🏨</div>
+<div class="stop-body"><p class="stop-time">Check-in · 3-Night Stay</p><h3>The Excelsior Florence</h3>
+<p class="stop-note">Piazza Ognissanti 3, Florence 50123 &nbsp;·&nbsp; Tel: +39 055 27151 &nbsp;·&nbsp; Luxury hotel steps from the Arno River.</p>
+<a href="https://www.google.com/maps/search/Excelsior+Florence+Piazza+Ognissanti" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open The Excelsior Florence in Google Maps (opens new tab)">📍 Google Maps</a></div></div>
+</li>
+</ul>
+</section>
 
-    
-    <section id="day-4" class="day-section" aria-labelledby="h4" hidden>
-      <p class="day-eyebrow">Day 4 · Thursday, July 2</p>
-      <h2 id="h4">🗼 Pisa Day Excursion</h2>
-      <span class="meals-badge" aria-label="Meals included: Breakfast and Lunch">🍴 Breakfast &amp; Lunch Included</span>
-      <ul class="stops" aria-label="July 2 stops">
-        <li class="stop" data-type="activity">
-          <div class="stop-inner"><div class="stop-icon" aria-hidden="true">🗼</div>
-          <div class="stop-body"><p class="stop-time">Morning</p><h3>Leaning Tower of Pisa</h3>
-          <p class="stop-note">Piazza dei Miracoli — the Field of Miracles. Optional tower climb available. Children ages 8–18 must be accompanied by an adult.</p>
-          <a href="https://www.google.com/maps/search/Leaning+Tower+of+Pisa+Piazza+dei+Miracoli" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open Leaning Tower of Pisa in Google Maps (opens new tab)">📍 Google Maps</a></div></div>
-        </li>
-        <li class="stop" data-type="activity">
-          <div class="stop-inner"><div class="stop-icon" aria-hidden="true">⛪</div>
-          <div class="stop-body"><p class="stop-time">Morning</p><h3>Pisa Cathedral (Duomo) &amp; Baptistry</h3>
-          <p class="stop-note">Two extraordinary medieval buildings alongside the Leaning Tower. Church dress code applies — knees and shoulders must be covered for entry.</p>
-          <a href="https://www.google.com/maps/search/Pisa+Cathedral+Duomo+Piazza+dei+Miracoli" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open Pisa Cathedral in Google Maps (opens new tab)">📍 Google Maps</a></div></div>
-        </li>
-        <li class="stop" data-type="dining">
-          <div class="stop-inner"><div class="stop-icon" aria-hidden="true">🍝</div>
-          <div class="stop-body"><p class="stop-time">Midday</p><h3>Lunch in Pisa</h3>
-          <p class="stop-note">Included lunch at a local Pisan restaurant before the return coach to Florence.</p>
-          <a href="https://www.google.com/maps/search/restaurants+Pisa+Italy" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Search Pisa restaurants in Google Maps (opens new tab)">📍 Google Maps</a></div></div>
-        </li>
-        <li class="stop" data-type="transport">
-          <div class="stop-inner"><div class="stop-icon" aria-hidden="true">🚌</div>
-          <div class="stop-body"><p class="stop-time">Afternoon</p><h3>Return to Florence — Evening Free</h3>
-          <p class="stop-note">Evening free to explore Florence on your own. Dinner not included — countless excellent restaurants to choose from.</p>
-          <a href="https://www.google.com/maps/search/restaurants+Florence+Italy" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Browse Florence restaurants in Google Maps (opens new tab)">📍 Browse Florence Restaurants</a></div></div>
-        </li>
-        <li class="stop" data-type="hotel">
-          <div class="stop-inner"><div class="stop-icon" aria-hidden="true">🏨</div>
-          <div class="stop-body"><p class="stop-time">Overnight</p><h3>The Excelsior Florence</h3>
-          <p class="stop-note">Piazza Ognissanti 3, Florence 50123 &nbsp;·&nbsp; Tel: +39 055 27151</p>
-          <a href="https://www.google.com/maps/search/Excelsior+Florence+Piazza+Ognissanti" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open The Excelsior Florence in Google Maps (opens new tab)">📍 Google Maps</a></div></div>
-        </li>
-      </ul>
-    </section>
+<section id="day-4" class="day-section" aria-labelledby="h4" hidden>
+<p class="day-eyebrow">Day 4 · Thursday, July 2</p>
+<h2 id="h4">🗼 Pisa Day Excursion</h2>
+<span class="meals-badge" aria-label="Meals included: Breakfast and Lunch">🍴 Breakfast &amp; Lunch Included</span>
+<ul class="stops" aria-label="July 2 stops">
+<li class="stop" data-type="activity">
+<div class="stop-inner"><div class="stop-icon" aria-hidden="true">🗼</div>
+<div class="stop-body"><p class="stop-time">Morning</p><h3>Leaning Tower of Pisa</h3>
+<p class="stop-note">Piazza dei Miracoli — the Field of Miracles. Optional tower climb available. Children ages 8–18 must be accompanied by an adult.</p>
+<a href="https://www.google.com/maps/search/Leaning+Tower+of+Pisa+Piazza+dei+Miracoli" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open Leaning Tower of Pisa in Google Maps (opens new tab)">📍 Google Maps</a></div></div>
+</li>
+<li class="stop" data-type="activity">
+<div class="stop-inner"><div class="stop-icon" aria-hidden="true">⛪</div>
+<div class="stop-body"><p class="stop-time">Morning</p><h3>Pisa Cathedral (Duomo) &amp; Baptistry</h3>
+<p class="stop-note">Two extraordinary medieval buildings alongside the Leaning Tower. Church dress code applies — knees and shoulders must be covered for entry.</p>
+<a href="https://www.google.com/maps/search/Pisa+Cathedral+Duomo+Piazza+dei+Miracoli" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open Pisa Cathedral in Google Maps (opens new tab)">📍 Google Maps</a></div></div>
+</li>
+<li class="stop" data-type="dining">
+<div class="stop-inner"><div class="stop-icon" aria-hidden="true">🍝</div>
+<div class="stop-body"><p class="stop-time">Midday</p><h3>Lunch in Pisa</h3>
+<p class="stop-note">Included lunch at a local Pisan restaurant before the return coach to Florence.</p>
+<a href="https://www.google.com/maps/search/restaurants+Pisa+Italy" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Search Pisa restaurants in Google Maps (opens new tab)">📍 Google Maps</a></div></div>
+</li>
+<li class="stop" data-type="transport">
+<div class="stop-inner"><div class="stop-icon" aria-hidden="true">🚌</div>
+<div class="stop-body"><p class="stop-time">Afternoon</p><h3>Return to Florence — Evening Free</h3>
+<p class="stop-note">Evening free to explore Florence on your own. Dinner not included — countless excellent restaurants to choose from.</p>
+<a href="https://www.google.com/maps/search/restaurants+Florence+Italy" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Browse Florence restaurants in Google Maps (opens new tab)">📍 Browse Florence Restaurants</a></div></div>
+</li>
+<li class="stop" data-type="hotel">
+<div class="stop-inner"><div class="stop-icon" aria-hidden="true">🏨</div>
+<div class="stop-body"><p class="stop-time">Overnight</p><h3>The Excelsior Florence</h3>
+<p class="stop-note">Piazza Ognissanti 3, Florence 50123 &nbsp;·&nbsp; Tel: +39 055 27151</p>
+<a href="https://www.google.com/maps/search/Excelsior+Florence+Piazza+Ognissanti" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open The Excelsior Florence in Google Maps (opens new tab)">📍 Google Maps</a></div></div>
+</li>
+</ul>
+</section>
 
-    
-    <section id="day-5" class="day-section" aria-labelledby="h5" hidden>
-      <p class="day-eyebrow">Day 5 · Friday, July 3</p>
-      <h2 id="h5">🎨 Florence — Michelangelo's David</h2>
-      <span class="meals-badge" aria-label="Meals included: Breakfast and Dinner">🍴 Breakfast &amp; Dinner Included</span>
-      <ul class="stops" aria-label="July 3 stops">
-        <li class="stop" data-type="activity">
-          <div class="stop-inner"><div class="stop-icon" aria-hidden="true">🚶</div>
-          <div class="stop-body"><p class="stop-time">Morning</p><h3>Florence Expert Guided Walking Tour</h3>
-          <p class="stop-note">Expert local guides lead a walk through the city center — Piazza della Signoria, Ponte Vecchio, and the Duomo surroundings.</p>
-          <a href="https://www.google.com/maps/search/Piazza+della+Signoria+Ponte+Vecchio+Florence" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open Florence city center in Google Maps (opens new tab)">📍 Google Maps</a></div></div>
-        </li>
-        <li class="stop" data-type="activity">
-          <div class="stop-inner"><div class="stop-icon" aria-hidden="true">🕐</div>
-          <div class="stop-body"><p class="stop-time">Afternoon · Free Time</p><h3>Explore Florence on Your Own</h3>
-          <p class="stop-note">Explore at your own pace. The Uffizi Gallery is steps away and worth a visit — purchase tickets in advance at uffizi.it.</p>
-          <a href="https://www.google.com/maps/search/Uffizi+Gallery+Florence+Italy" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open Uffizi Gallery in Google Maps (opens new tab)">📍 Uffizi Gallery on Maps</a></div></div>
-        </li>
-        <li class="stop" data-type="activity">
-          <div class="stop-inner"><div class="stop-icon" aria-hidden="true">🗿</div>
-          <div class="stop-body"><p class="stop-time">Evening</p><h3>Galleria dell'Accademia — Michelangelo's David</h3>
-          <p class="stop-note">Home to Michelangelo's David — one of the most celebrated sculptures in history. Via Ricasoli 58/60, Florence.</p>
-          <a href="https://www.google.com/maps/search/Galleria+Accademia+Florence+Via+Ricasoli" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open Galleria dell'Accademia in Google Maps (opens new tab)">📍 Google Maps</a></div></div>
-        </li>
-        <li class="stop" data-type="dining">
-          <div class="stop-inner"><div class="stop-icon" aria-hidden="true">🍕</div>
-          <div class="stop-body"><p class="stop-time">Evening</p><h3>Pizza-Making Dinner</h3>
-          <p class="stop-note">Dinner at a popular local Florence restaurant with a hands-on pizza-making demonstration. Included in the tour.</p>
-          <a href="https://www.google.com/maps/search/restaurants+Florence+Italy+pizza" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Search Florence pizza restaurants in Google Maps (opens new tab)">📍 Google Maps</a></div></div>
-        </li>
-        <li class="stop" data-type="hotel">
-          <div class="stop-inner"><div class="stop-icon" aria-hidden="true">🏨</div>
-          <div class="stop-body"><p class="stop-time">Overnight</p><h3>The Excelsior Florence</h3>
-          <p class="stop-note">Piazza Ognissanti 3, Florence 50123 &nbsp;·&nbsp; Tel: +39 055 27151</p>
-          <a href="https://www.google.com/maps/search/Excelsior+Florence+Piazza+Ognissanti" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open The Excelsior Florence in Google Maps (opens new tab)">📍 Google Maps</a></div></div>
-        </li>
-      </ul>
-    </section>
+<section id="day-5" class="day-section" aria-labelledby="h5" hidden>
+<p class="day-eyebrow">Day 5 · Friday, July 3</p>
+<h2 id="h5">🎨 Florence — Michelangelo's David</h2>
+<span class="meals-badge" aria-label="Meals included: Breakfast and Dinner">🍴 Breakfast &amp; Dinner Included</span>
+<ul class="stops" aria-label="July 3 stops">
+<li class="stop" data-type="activity">
+<div class="stop-inner"><div class="stop-icon" aria-hidden="true">🚶</div>
+<div class="stop-body"><p class="stop-time">Morning</p><h3>Florence Expert Guided Walking Tour</h3>
+<p class="stop-note">Expert local guides lead a walk through the city center — Piazza della Signoria, Ponte Vecchio, and the Duomo surroundings.</p>
+<a href="https://www.google.com/maps/search/Piazza+della+Signoria+Ponte+Vecchio+Florence" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open Florence city center in Google Maps (opens new tab)">📍 Google Maps</a></div></div>
+</li>
+<li class="stop" data-type="activity">
+<div class="stop-inner"><div class="stop-icon" aria-hidden="true">🕐</div>
+<div class="stop-body"><p class="stop-time">Afternoon · Free Time</p><h3>Explore Florence on Your Own</h3>
+<p class="stop-note">Explore at your own pace. The Uffizi Gallery is steps away and worth a visit — purchase tickets in advance at uffizi.it.</p>
+<a href="https://www.google.com/maps/search/Uffizi+Gallery+Florence+Italy" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open Uffizi Gallery in Google Maps (opens new tab)">📍 Uffizi Gallery on Maps</a></div></div>
+</li>
+<li class="stop" data-type="activity">
+<div class="stop-inner"><div class="stop-icon" aria-hidden="true">🗿</div>
+<div class="stop-body"><p class="stop-time">Evening</p><h3>Galleria dell'Accademia — Michelangelo's David</h3>
+<p class="stop-note">Home to Michelangelo's David — one of the most celebrated sculptures in history. Via Ricasoli 58/60, Florence.</p>
+<a href="https://www.google.com/maps/search/Galleria+Accademia+Florence+Via+Ricasoli" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open Galleria dell'Accademia in Google Maps (opens new tab)">📍 Google Maps</a></div></div>
+</li>
+<li class="stop" data-type="dining">
+<div class="stop-inner"><div class="stop-icon" aria-hidden="true">🍕</div>
+<div class="stop-body"><p class="stop-time">Evening</p><h3>Pizza-Making Dinner</h3>
+<p class="stop-note">Dinner at a popular local Florence restaurant with a hands-on pizza-making demonstration. Included in the tour.</p>
+<a href="https://www.google.com/maps/search/restaurants+Florence+Italy+pizza" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Search Florence pizza restaurants in Google Maps (opens new tab)">📍 Google Maps</a></div></div>
+</li>
+<li class="stop" data-type="hotel">
+<div class="stop-inner"><div class="stop-icon" aria-hidden="true">🏨</div>
+<div class="stop-body"><p class="stop-time">Overnight</p><h3>The Excelsior Florence</h3>
+<p class="stop-note">Piazza Ognissanti 3, Florence 50123 &nbsp;·&nbsp; Tel: +39 055 27151</p>
+<a href="https://www.google.com/maps/search/Excelsior+Florence+Piazza+Ognissanti" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open The Excelsior Florence in Google Maps (opens new tab)">📍 Google Maps</a></div></div>
+</li>
+</ul>
+</section>
 
-    
-    <section id="day-6" class="day-section" aria-labelledby="h6" hidden>
-      <p class="day-eyebrow">Day 6 · Saturday, July 4</p>
-      <h2 id="h6">🚄 Florence → Venice</h2>
-      <span class="meals-badge" aria-label="Meals included: Breakfast, Lunch and Dinner">🍴 Breakfast, Lunch &amp; Dinner Included</span>
-      <ul class="stops" aria-label="July 4 stops">
-        <li class="stop" data-type="transport">
-          <div class="stop-inner"><div class="stop-icon" aria-hidden="true">🚄</div>
-          <div class="stop-body"><p class="stop-time">Morning</p><h3>High-Speed Train — Florence to Venice</h3>
-          <p class="stop-note">Depart Florence Santa Maria Novella Station. Arrive Venice Santa Lucia Station. Trains reach up to 186 mph through the Italian countryside.</p>
-          <a href="https://www.google.com/maps/search/Florence+Santa+Maria+Novella+Station" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open Florence train station in Google Maps (opens new tab)">📍 Florence Station on Maps</a></div></div>
-        </li>
-        <li class="stop" data-type="dining">
-          <div class="stop-inner"><div class="stop-icon" aria-hidden="true">🍝</div>
-          <div class="stop-body"><p class="stop-time">Midday</p><h3>Lunch in Venice</h3>
-          <p class="stop-note">Included lunch at a local Venetian restaurant upon arrival in the city.</p>
-          <a href="https://www.google.com/maps/search/restaurants+Venice+Italy" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Search Venice restaurants in Google Maps (opens new tab)">📍 Google Maps</a></div></div>
-        </li>
-        <li class="stop" data-type="transport">
-          <div class="stop-inner"><div class="stop-icon" aria-hidden="true">⛵</div>
-          <div class="stop-body"><p class="stop-time">Afternoon</p><h3>Canal Boat Transfer to Hotel</h3>
-          <p class="stop-note">Water taxi across the Venice lagoon to the JW Marriott's private island. Free time to settle in and relax.</p>
-          <a href="https://www.google.com/maps/search/JW+Marriott+Venice+Resort+Sacca+Sessola" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open JW Marriott Venice Resort in Google Maps (opens new tab)">📍 Google Maps</a></div></div>
-        </li>
-        <li class="stop" data-type="activity">
-          <div class="stop-inner"><div class="stop-icon" aria-hidden="true">🏴‍☠️</div>
-          <div class="stop-body"><p class="stop-time">Evening</p><h3>Pirate Boat Excursion</h3>
-          <p class="stop-note">Adventure boat tour around Venice and the surrounding islands with dinner and games on board. One of the most memorable experiences of the whole trip.</p>
-          <a href="https://www.google.com/maps/search/Venice+Lagoon+Italy" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open Venice Lagoon in Google Maps (opens new tab)">📍 Venice Lagoon on Maps</a></div></div>
-        </li>
-        <li class="stop" data-type="hotel">
-          <div class="stop-inner"><div class="stop-icon" aria-hidden="true">🏨</div>
-          <div class="stop-body"><p class="stop-time">Check-in · 2-Night Stay</p><h3>JW Marriott Venice Resort</h3>
-          <p class="stop-note">Isola delle Rose–Sacca Sessola, Laguna di San Marco, 30133 Venezia &nbsp;·&nbsp; Tel: +39 041 852 1300 &nbsp;·&nbsp; Private island resort on the Venice lagoon.</p>
-          <a href="https://www.google.com/maps/search/JW+Marriott+Venice+Resort+Sacca+Sessola" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open JW Marriott Venice Resort in Google Maps (opens new tab)">📍 Google Maps</a></div></div>
-        </li>
-      </ul>
-    </section>
+<section id="day-6" class="day-section" aria-labelledby="h6" hidden>
+<p class="day-eyebrow">Day 6 · Saturday, July 4</p>
+<h2 id="h6">🚄 Florence → Venice</h2>
+<span class="meals-badge" aria-label="Meals included: Breakfast, Lunch and Dinner">🍴 Breakfast, Lunch &amp; Dinner Included</span>
+<ul class="stops" aria-label="July 4 stops">
+<li class="stop" data-type="transport">
+<div class="stop-inner"><div class="stop-icon" aria-hidden="true">🚄</div>
+<div class="stop-body"><p class="stop-time">Morning</p><h3>High-Speed Train — Florence to Venice</h3>
+<p class="stop-note">Depart Florence Santa Maria Novella Station. Arrive Venice Santa Lucia Station. Trains reach up to 186 mph through the Italian countryside.</p>
+<a href="https://www.google.com/maps/search/Florence+Santa+Maria+Novella+Station" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open Florence train station in Google Maps (opens new tab)">📍 Florence Station on Maps</a></div></div>
+</li>
+<li class="stop" data-type="dining">
+<div class="stop-inner"><div class="stop-icon" aria-hidden="true">🍝</div>
+<div class="stop-body"><p class="stop-time">Midday</p><h3>Lunch in Venice</h3>
+<p class="stop-note">Included lunch at a local Venetian restaurant upon arrival in the city.</p>
+<a href="https://www.google.com/maps/search/restaurants+Venice+Italy" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Search Venice restaurants in Google Maps (opens new tab)">📍 Google Maps</a></div></div>
+</li>
+<li class="stop" data-type="transport">
+<div class="stop-inner"><div class="stop-icon" aria-hidden="true">⛵</div>
+<div class="stop-body"><p class="stop-time">Afternoon</p><h3>Canal Boat Transfer to Hotel</h3>
+<p class="stop-note">Water taxi across the Venice lagoon to the JW Marriott's private island. Free time to settle in and relax.</p>
+<a href="https://www.google.com/maps/search/JW+Marriott+Venice+Resort+Sacca+Sessola" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open JW Marriott Venice Resort in Google Maps (opens new tab)">📍 Google Maps</a></div></div>
+</li>
+<li class="stop" data-type="activity">
+<div class="stop-inner"><div class="stop-icon" aria-hidden="true">🏴‍☠️</div>
+<div class="stop-body"><p class="stop-time">Evening</p><h3>Pirate Boat Excursion</h3>
+<p class="stop-note">Adventure boat tour around Venice and the surrounding islands with dinner and games on board. One of the most memorable experiences of the whole trip.</p>
+<a href="https://www.google.com/maps/search/Venice+Lagoon+Italy" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open Venice Lagoon in Google Maps (opens new tab)">📍 Venice Lagoon on Maps</a></div></div>
+</li>
+<li class="stop" data-type="hotel">
+<div class="stop-inner"><div class="stop-icon" aria-hidden="true">🏨</div>
+<div class="stop-body"><p class="stop-time">Check-in · 2-Night Stay</p><h3>JW Marriott Venice Resort</h3>
+<p class="stop-note">Isola delle Rose–Sacca Sessola, Laguna di San Marco, 30133 Venezia &nbsp;·&nbsp; Tel: +39 041 852 1300 &nbsp;·&nbsp; Private island resort on the Venice lagoon.</p>
+<a href="https://www.google.com/maps/search/JW+Marriott+Venice+Resort+Sacca+Sessola" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open JW Marriott Venice Resort in Google Maps (opens new tab)">📍 Google Maps</a></div></div>
+</li>
+</ul>
+</section>
 
-    
-    <section id="day-7" class="day-section" aria-labelledby="h7" hidden>
-      <p class="day-eyebrow">Day 7 · Sunday, July 5</p>
-      <h2 id="h7">🚤 Venice — Doge's Palace</h2>
-      <span class="meals-badge" aria-label="Meals included: Breakfast and Dinner">🍴 Breakfast &amp; Dinner Included</span>
-      <div class="alert" role="note"><span class="alert-icon" aria-hidden="true">🎟️</span>
-      <p><strong>Venice Visitor Fee:</strong> As overnight guests you are exempt from the €5 day-visitor fee, but need a free QR code first — get it at <a href="https://cda.veneziaunica.it/en" target="_blank" rel="noopener noreferrer">cda.veneziaunica.it/en</a>. Your Tauck Director can also help before arrival.</p></div>
-      <ul class="stops" aria-label="July 5 stops">
-        <li class="stop" data-type="activity">
-          <div class="stop-inner"><div class="stop-icon" aria-hidden="true">🏛️</div>
-          <div class="stop-body"><p class="stop-time">Morning</p><h3>St. Mark's Square (Piazza San Marco)</h3>
-          <p class="stop-note">The heart of Venice. Exterior viewing of St. Mark's Basilica — the golden Byzantine architecture is extraordinary. Church dress code required inside.</p>
-          <a href="https://www.google.com/maps/search/Piazza+San+Marco+Venice+Italy" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open Piazza San Marco in Google Maps (opens new tab)">📍 Google Maps</a></div></div>
-        </li>
-        <li class="stop" data-type="activity">
-          <div class="stop-inner"><div class="stop-icon" aria-hidden="true">👑</div>
-          <div class="stop-body"><p class="stop-time">Morning</p><h3>Doge's Palace (Palazzo Ducale)</h3>
-          <p class="stop-note">Interior guided visit through centuries of Venetian history — seat of power for nearly 700 years. Grand halls, priceless artwork, and the famous Bridge of Sighs.</p>
-          <a href="https://www.google.com/maps/search/Doges+Palace+Palazzo+Ducale+Venice" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open Doge's Palace in Google Maps (opens new tab)">📍 Google Maps</a></div></div>
-        </li>
-        <li class="stop" data-type="activity">
-          <div class="stop-inner"><div class="stop-icon" aria-hidden="true">🗺️</div>
-          <div class="stop-body"><p class="stop-time">Afternoon · Free Time</p><h3>Wander Venice on Your Own</h3>
-          <p class="stop-note">Venice is best explored by getting lost. Follow narrow alleyways, cross small bridges, visit a museum, or stop for gelato — served warmer and creamier here than anywhere else.</p>
-          <a href="https://www.google.com/maps/search/Venice+Italy+neighborhoods" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Explore Venice neighborhoods in Google Maps (opens new tab)">📍 Explore Venice on Maps</a></div></div>
-        </li>
-        <li class="stop" data-type="dining">
-          <div class="stop-inner"><div class="stop-icon" aria-hidden="true">🥂</div>
-          <div class="stop-body"><p class="stop-time">Evening</p><h3>Farewell Reception &amp; Dinner</h3>
-          <p class="stop-note">Final group dinner at the JW Marriott Venice Resort. A memorable send-off on the lagoon with the full Tauck family.</p>
-          <a href="https://www.google.com/maps/search/JW+Marriott+Venice+Resort+Sacca+Sessola" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open JW Marriott Venice Resort in Google Maps (opens new tab)">📍 Google Maps</a></div></div>
-        </li>
-        <li class="stop" data-type="hotel">
-          <div class="stop-inner"><div class="stop-icon" aria-hidden="true">🏨</div>
-          <div class="stop-body"><p class="stop-time">Overnight · Final Night</p><h3>JW Marriott Venice Resort</h3>
-          <p class="stop-note">Isola delle Rose–Sacca Sessola, Laguna di San Marco, 30133 Venezia &nbsp;·&nbsp; Tel: +39 041 852 1300</p>
-          <a href="https://www.google.com/maps/search/JW+Marriott+Venice+Resort+Sacca+Sessola" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open JW Marriott Venice Resort in Google Maps (opens new tab)">📍 Google Maps</a></div></div>
-        </li>
-      </ul>
-    </section>
+<section id="day-7" class="day-section" aria-labelledby="h7" hidden>
+<p class="day-eyebrow">Day 7 · Sunday, July 5</p>
+<h2 id="h7">🚤 Venice — Doge's Palace</h2>
+<span class="meals-badge" aria-label="Meals included: Breakfast and Dinner">🍴 Breakfast &amp; Dinner Included</span>
+<div class="alert" role="note"><span class="alert-icon" aria-hidden="true">🎟️</span>
+<p><strong>Venice Visitor Fee:</strong> As overnight guests you are exempt from the €5 day-visitor fee, but need a free QR code first — get it at <a href="https://cda.veneziaunica.it/en" target="_blank" rel="noopener noreferrer">cda.veneziaunica.it/en</a>. Your Tauck Director can also help before arrival.</p></div>
+<ul class="stops" aria-label="July 5 stops">
+<li class="stop" data-type="activity">
+<div class="stop-inner"><div class="stop-icon" aria-hidden="true">🏛️</div>
+<div class="stop-body"><p class="stop-time">Morning</p><h3>St. Mark's Square (Piazza San Marco)</h3>
+<p class="stop-note">The heart of Venice. Exterior viewing of St. Mark's Basilica — the golden Byzantine architecture is extraordinary. Church dress code required inside.</p>
+<a href="https://www.google.com/maps/search/Piazza+San+Marco+Venice+Italy" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open Piazza San Marco in Google Maps (opens new tab)">📍 Google Maps</a></div></div>
+</li>
+<li class="stop" data-type="activity">
+<div class="stop-inner"><div class="stop-icon" aria-hidden="true">👑</div>
+<div class="stop-body"><p class="stop-time">Morning</p><h3>Doge's Palace (Palazzo Ducale)</h3>
+<p class="stop-note">Interior guided visit through centuries of Venetian history — seat of power for nearly 700 years. Grand halls, priceless artwork, and the famous Bridge of Sighs.</p>
+<a href="https://www.google.com/maps/search/Doges+Palace+Palazzo+Ducale+Venice" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open Doge's Palace in Google Maps (opens new tab)">📍 Google Maps</a></div></div>
+</li>
+<li class="stop" data-type="activity">
+<div class="stop-inner"><div class="stop-icon" aria-hidden="true">🗺️</div>
+<div class="stop-body"><p class="stop-time">Afternoon · Free Time</p><h3>Wander Venice on Your Own</h3>
+<p class="stop-note">Venice is best explored by getting lost. Follow narrow alleyways, cross small bridges, visit a museum, or stop for gelato — served warmer and creamier here than anywhere else.</p>
+<a href="https://www.google.com/maps/search/Venice+Italy+neighborhoods" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Explore Venice neighborhoods in Google Maps (opens new tab)">📍 Explore Venice on Maps</a></div></div>
+</li>
+<li class="stop" data-type="dining">
+<div class="stop-inner"><div class="stop-icon" aria-hidden="true">🥂</div>
+<div class="stop-body"><p class="stop-time">Evening</p><h3>Farewell Reception &amp; Dinner</h3>
+<p class="stop-note">Final group dinner at the JW Marriott Venice Resort. A memorable send-off on the lagoon with the full Tauck family.</p>
+<a href="https://www.google.com/maps/search/JW+Marriott+Venice+Resort+Sacca+Sessola" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open JW Marriott Venice Resort in Google Maps (opens new tab)">📍 Google Maps</a></div></div>
+</li>
+<li class="stop" data-type="hotel">
+<div class="stop-inner"><div class="stop-icon" aria-hidden="true">🏨</div>
+<div class="stop-body"><p class="stop-time">Overnight · Final Night</p><h3>JW Marriott Venice Resort</h3>
+<p class="stop-note">Isola delle Rose–Sacca Sessola, Laguna di San Marco, 30133 Venezia &nbsp;·&nbsp; Tel: +39 041 852 1300</p>
+<a href="https://www.google.com/maps/search/JW+Marriott+Venice+Resort+Sacca+Sessola" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open JW Marriott Venice Resort in Google Maps (opens new tab)">📍 Google Maps</a></div></div>
+</li>
+</ul>
+</section>
 
-    
-    <section id="day-8" class="day-section" aria-labelledby="h8" hidden>
-      <p class="day-eyebrow">Day 8 · Monday, July 6</p>
-      <h2 id="h8">🏠 Venice → Home</h2>
-      <span class="meals-badge" aria-label="Meals included: Breakfast">🍴 Breakfast Included</span>
-      <ul class="stops" aria-label="July 6 stops">
-        <li class="stop" data-type="dining">
-          <div class="stop-inner"><div class="stop-icon" aria-hidden="true">☕</div>
-          <div class="stop-body"><p class="stop-time">Morning</p><h3>Final Breakfast at the JW Marriott Venice</h3>
-          <p class="stop-note">Last morning in Italy. Enjoy a final Italian breakfast before heading to the airport.</p>
-          <a href="https://www.google.com/maps/search/JW+Marriott+Venice+Resort+Sacca+Sessola" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open JW Marriott Venice Resort in Google Maps (opens new tab)">📍 Google Maps</a></div></div>
-        </li>
-        <li class="stop" data-type="transport">
-          <div class="stop-inner"><div class="stop-icon" aria-hidden="true">🚤</div>
-          <div class="stop-body"><p class="stop-time">Morning</p><h3>Transfer to Venice Marco Polo Airport (VCE)</h3>
-          <p class="stop-note">Complimentary transfer by water taxi and/or land. Allow up to 3 hours before departure. Your Tauck Director confirms your pickup time the night before.</p>
-          <a href="https://www.google.com/maps/search/Venice+Marco+Polo+Airport" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open Venice Marco Polo Airport in Google Maps (opens new tab)">📍 Google Maps</a></div></div>
-        </li>
-        <li class="stop" data-type="transport">
-          <div class="stop-inner"><div class="stop-icon" aria-hidden="true">✈️</div>
-          <div class="stop-body"><p class="stop-time">Depart</p><h3>Venice (VCE) → JFK, New York</h3>
-          <p class="stop-note">Flight details TBD. Safe travels home — arrivederci, Italia!</p>
-          <a href="https://www.google.com/maps/search/Venice+Marco+Polo+Airport+VCE" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open Venice airport in Google Maps (opens new tab)">📍 Airport on Maps</a></div></div>
-        </li>
-      </ul>
-    </section></div>
+<section id="day-8" class="day-section" aria-labelledby="h8" hidden>
+<p class="day-eyebrow">Day 8 · Monday, July 6</p>
+<h2 id="h8">🏠 Venice → Home</h2>
+<span class="meals-badge" aria-label="Meals included: Breakfast">🍴 Breakfast Included</span>
+<ul class="stops" aria-label="July 6 stops">
+<li class="stop" data-type="dining">
+<div class="stop-inner"><div class="stop-icon" aria-hidden="true">☕</div>
+<div class="stop-body"><p class="stop-time">Morning</p><h3>Final Breakfast at the JW Marriott Venice</h3>
+<p class="stop-note">Last morning in Italy. Enjoy a final Italian breakfast before heading to the airport.</p>
+<a href="https://www.google.com/maps/search/JW+Marriott+Venice+Resort+Sacca+Sessola" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open JW Marriott Venice Resort in Google Maps (opens new tab)">📍 Google Maps</a></div></div>
+</li>
+<li class="stop" data-type="transport">
+<div class="stop-inner"><div class="stop-icon" aria-hidden="true">🚤</div>
+<div class="stop-body"><p class="stop-time">Morning</p><h3>Transfer to Venice Marco Polo Airport (VCE)</h3>
+<p class="stop-note">Complimentary transfer by water taxi and/or land. Allow up to 3 hours before departure. Your Tauck Director confirms your pickup time the night before.</p>
+<a href="https://www.google.com/maps/search/Venice+Marco+Polo+Airport" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open Venice Marco Polo Airport in Google Maps (opens new tab)">📍 Google Maps</a></div></div>
+</li>
+<li class="stop" data-type="transport">
+<div class="stop-inner"><div class="stop-icon" aria-hidden="true">✈️</div>
+<div class="stop-body"><p class="stop-time">Depart</p><h3>Venice (VCE) → JFK, New York</h3>
+<p class="stop-note">Flight details TBD. Safe travels home — arrivederci, Italia!</p>
+<a href="https://www.google.com/maps/search/Venice+Marco+Polo+Airport+VCE" target="_blank" rel="noopener noreferrer" class="maps-btn" aria-label="Open Venice airport in Google Maps (opens new tab)">📍 Airport on Maps</a></div></div>
+</li>
+</ul>
+</section></div>
 </div>
-```
-
-  </div>
-
-  <div id="panel-hotels" class="tab-panel" role="tabpanel" aria-labelledby="tab-hotels">
-    <div class="page-section">
-      <h2>Accommodations</h2>
-      <div class="section-rule" aria-hidden="true"></div>
-      <article class="hotel-card" aria-labelledby="hh-rome">
-        <div class="hotel-head"><h3 id="hh-rome">Aleph Rome Hotel – Curio by Hilton</h3><p class="hotel-dates">Sunday, June 28 → Wednesday, July 1 &nbsp;·&nbsp; 3 Nights</p></div>
-        <div class="hotel-body">
-          <p class="hotel-row"><span class="hotel-row-icon" aria-hidden="true">📍</span>Via di San Basilio 15, 00187 Roma, Italy</p>
-          <p class="hotel-row"><span class="hotel-row-icon" aria-hidden="true">📞</span><a href="tel:+390642290011">+39 06 4229001</a></p>
-          <p class="hotel-row"><span class="hotel-row-icon" aria-hidden="true">🕒</span>Check-in: 3:00 PM &nbsp;·&nbsp; Check-out: 12:00 noon</p>
-          <p class="hotel-row"><span class="hotel-row-icon" aria-hidden="true">☕</span>Breakfast included &nbsp;·&nbsp; Reservation guaranteed for late arrival</p>
-          <a href="https://www.google.com/maps/search/Aleph+Rome+Hotel+Curio+Hilton+Via+San+Basilio" target="_blank" rel="noopener noreferrer" class="hotel-maps-btn" aria-label="Open Aleph Rome Hotel in Google Maps (opens new tab)">📍 Open in Google Maps</a>
-        </div>
-      </article>
-      <article class="hotel-card" aria-labelledby="hh-florence">
-        <div class="hotel-head"><h3 id="hh-florence">The Excelsior Florence</h3><p class="hotel-dates">Wednesday, July 1 → Saturday, July 4 &nbsp;·&nbsp; 3 Nights</p></div>
-        <div class="hotel-body">
-          <p class="hotel-row"><span class="hotel-row-icon" aria-hidden="true">📍</span>Piazza Ognissanti 3, Florence 50123, Italy</p>
-          <p class="hotel-row"><span class="hotel-row-icon" aria-hidden="true">📞</span><a href="tel:+3905527151">+39 055 27151</a></p>
-          <p class="hotel-row"><span class="hotel-row-icon" aria-hidden="true">🚶</span>Short walk to Piazza della Signoria and the Uffizi Gallery</p>
-          <a href="https://www.google.com/maps/search/Excelsior+Florence+Piazza+Ognissanti" target="_blank" rel="noopener noreferrer" class="hotel-maps-btn" aria-label="Open The Excelsior Florence in Google Maps (opens new tab)">📍 Open in Google Maps</a>
-        </div>
-      </article>
-      <article class="hotel-card" aria-labelledby="hh-venice">
-        <div class="hotel-head"><h3 id="hh-venice">JW Marriott Venice Resort</h3><p class="hotel-dates">Saturday, July 4 → Monday, July 6 &nbsp;·&nbsp; 2 Nights</p></div>
-        <div class="hotel-body">
-          <p class="hotel-row"><span class="hotel-row-icon" aria-hidden="true">📍</span>Isola delle Rose–Sacca Sessola, Laguna di San Marco, 30133 Venezia, Italy</p>
-          <p class="hotel-row"><span class="hotel-row-icon" aria-hidden="true">📞</span><a href="tel:+390418521300">+39 041 852 1300</a></p>
-          <p class="hotel-row"><span class="hotel-row-icon" aria-hidden="true">⛵</span>Private island resort — access by water taxi from Venice</p>
-          <a href="https://www.google.com/maps/search/JW+Marriott+Venice+Resort+Sacca+Sessola" target="_blank" rel="noopener noreferrer" class="hotel-maps-btn" aria-label="Open JW Marriott Venice Resort in Google Maps (opens new tab)">📍 Open in Google Maps</a>
-        </div>
-      </article>
-    </div>
-  </div>
-
-  <div id="panel-info" class="tab-panel" role="tabpanel" aria-labelledby="tab-info">
-    <div class="page-section">
-      <h2>Trip Essentials</h2>
-      <div class="section-rule" aria-hidden="true"></div>
-      <div class="essentials-list">
-        <div class="ess-card"><span class="ess-icon" aria-hidden="true">📞</span><div><p class="ess-title">Italy Car Service — Emergency</p><p class="ess-detail">Marco Tonnicchia Car Service: <a href="tel:+393358423187">+39 335 842 3187</a> (24 hours). State you are traveling with Tauck when you call.</p></div></div>
-        <div class="ess-card"><span class="ess-icon" aria-hidden="true">📞</span><div><p class="ess-title">Tauck 24-Hour Line</p><p class="ess-detail">US &amp; Canada: <a href="tel:18004682825">1-800-468-2825</a> &nbsp;·&nbsp; International: <a href="tel:0012038996500">001-203-899-6500</a></p></div></div>
-        <div class="ess-card"><span class="ess-icon" aria-hidden="true">🏥</span><div><p class="ess-title">CareFree Travel Assistance — Medical</p><p class="ess-detail">US: <a href="tel:18002086173">1-800-208-6173</a> &nbsp;·&nbsp; International collect: <a href="tel:+18178267005">+1-817-826-7005</a> &nbsp;·&nbsp; <a href="mailto:CareFreeAssistance@LiveTravel.com">CareFreeAssistance@LiveTravel.com</a></p></div></div>
-        <div class="ess-card"><span class="ess-icon" aria-hidden="true">📋</span><div><p class="ess-title">Travel Insurance Claims</p><p class="ess-detail"><a href="https://www.aontravelclaim.com" target="_blank" rel="noopener noreferrer">www.aontravelclaim.com</a> — file or check claim status online anytime.</p></div></div>
-        <div class="ess-card"><span class="ess-icon" aria-hidden="true">🛂</span><div><p class="ess-title">European Entry System (EES)</p><p class="ess-detail">Active since October 2025. First-time Schengen entry requires fingerprints, photo, and passport scan. No advance application or fee needed. Allow extra time at passport control.</p></div></div>
-        <div class="ess-card"><span class="ess-icon" aria-hidden="true">🎟️</span><div><p class="ess-title">Venice Overnight Guest Fee Exemption</p><p class="ess-detail">Overnight guests are exempt from the €5 day-visitor fee but need a free QR code at <a href="https://cda.veneziaunica.it/en" target="_blank" rel="noopener noreferrer">cda.veneziaunica.it/en</a>. Your Tauck Director can also help before Venice.</p></div></div>
-        <div class="ess-card"><span class="ess-icon" aria-hidden="true">👗</span><div><p class="ess-title">Church Dress Code — All Churches in Italy</p><p class="ess-detail">Knees and shoulders must be covered to enter any church. Strictly enforced at St. Peter's Basilica — no shorts or tank tops. A lightweight scarf in your bag solves the problem easily.</p></div></div>
-        <div class="ess-card"><span class="ess-icon" aria-hidden="true">👟</span><div><p class="ess-title">Footwear — Very Important</p><p class="ess-detail">This tour is Level 3 of 4 for activity. Expect 2–3 miles of walking daily on cobblestones and uneven terrain. Wear comfortable, well broken-in shoes. Do not bring new ones.</p></div></div>
-        <div class="ess-card"><span class="ess-icon" aria-hidden="true">👜</span><div><p class="ess-title">Luggage Allowance (Tauck)</p><p class="ess-detail">One checked bag per person &nbsp;·&nbsp; Max 50 lbs (23 kg) &nbsp;·&nbsp; Max 62 inches total dimensions. Also verify your airline's own baggage policy separately.</p></div></div>
-        <div class="ess-card"><span class="ess-icon" aria-hidden="true">💶</span><div><p class="ess-title">Currency</p><p class="ess-detail">Italy uses the Euro (€). Check current rates at <a href="https://www.xe.com" target="_blank" rel="noopener noreferrer">xe.com</a>. Cards are widely accepted — carry some cash for small purchases and markets.</p></div></div>
-        <div class="ess-card"><span class="ess-icon" aria-hidden="true">🕐</span><div><p class="ess-title">Time Zone</p><p class="ess-detail">Italy is 6 hours ahead of Eastern Time in summer (UTC+2, CEST). If it's 9:00 AM in New York, it's 3:00 PM in Rome.</p></div></div>
-        <div class="ess-card"><span class="ess-icon" aria-hidden="true">🌡️</span><div><p class="ess-title">Weather — Late June &amp; Early July</p><p class="ess-detail">Hot and sunny. Daily highs average 78–85°F and often exceed 90°F. Pack light breathable clothing, a hat, sunscreen, and a small umbrella. Check <a href="https://weather.com" target="_blank" rel="noopener noreferrer">weather.com</a> before departure.</p></div></div>
-        <div class="ess-card"><span class="ess-icon" aria-hidden="true">🔌</span><div><p class="ess-title">Electrical Adapters</p><p class="ess-detail">Italy uses 240V power with Type F/L outlets. Bring a universal travel adapter. Any personal hair dryer must be dual-voltage (100–240V).</p></div></div>
-        <div class="ess-card"><span class="ess-icon" aria-hidden="true">🌐</span><div><p class="ess-title">Hotel Wi-Fi</p><p class="ess-detail">Basic complimentary Wi-Fi available at all three hotels. Speed and reliability may vary by property.</p></div></div>
-
-```
-    <div style="margin-top: 24px; margin-bottom: 4px; padding-bottom: 10px; border-bottom: 3px solid var(--terra);">
-      <h3 style="font-family: 'Playfair Display', Georgia, serif; font-size: 1.3rem; color: var(--ink); font-weight: 700;">🚨 Emergency Guide</h3>
-      <p style="font-size: 0.9rem; color: var(--stone); margin-top: 4px;">Keep this page bookmarked. In any emergency, stay calm, stay together, and follow these steps.</p>
-    </div>
-
-    
-    <div class="ess-card" style="border-color: #c04040; background: #fdf4f4;">
-      <span class="ess-icon" aria-hidden="true">🆘</span>
-      <div>
-        <p class="ess-title">Italian Emergency Numbers</p>
-        <p class="ess-detail">
-          <strong>112</strong> — Single European Emergency Number (Police, Fire, Ambulance — English operators available)<br>
-          <strong>113</strong> — Italian State Police (Polizia di Stato)<br>
-          <strong>118</strong> — Medical Emergency &amp; Ambulance<br>
-          <strong>115</strong> — Fire Brigade (Vigili del Fuoco)<br>
-          <strong>1515</strong> — Environmental Emergency<br><br>
-          <strong>Tip:</strong> 112 is the most reliable number to call — it routes to the correct service and English-speaking operators are available 24 hours.
-        </p>
-      </div>
-    </div>
-
-    
-    <div class="ess-card" style="border-color: #c04040; background: #fdf4f4;">
-      <span class="ess-icon" aria-hidden="true">🇺🇸</span>
-      <div>
-        <p class="ess-title">U.S. Embassy &amp; Consulates — Italy</p>
-        <p class="ess-detail">
-          <strong>U.S. Embassy Rome:</strong> Via Vittorio Veneto 121 &nbsp;·&nbsp; <a href="tel:+3906-46741">+39 06 46741</a><br>
-          <strong>U.S. Consulate Florence:</strong> Lungarno Vespucci 38 &nbsp;·&nbsp; <a href="tel:+39055-266-951">+39 055 266 951</a><br>
-          <strong>U.S. Consulate Milan (nearest to Venice):</strong> Via Principe Amedeo 2/10 &nbsp;·&nbsp; <a href="tel:+3902-290351">+39 02 290351</a><br><br>
-          <strong>After-hours emergencies:</strong> Call the main Rome Embassy number above and follow the prompts for the American Citizen Services emergency line.
-        </p>
-      </div>
-    </div>
-
-    
-    <div class="ess-card" style="border-color: #c09820; background: var(--warn-bg);">
-      <span class="ess-icon" aria-hidden="true">🕵️</span>
-      <div>
-        <p class="ess-title">If You Are Pickpocketed — Step by Step</p>
-        <p class="ess-detail">
-          Pickpocketing is the most common crime targeting tourists in Rome, Florence, and Venice. High-risk areas include the Colosseum, Vatican, train stations, crowded markets, and public transport. If it happens, here is exactly what to do:<br><br>
-
-          <strong>Step 1 — Stay calm and stay together.</strong> Do not chase the pickpocket. It is not worth the risk of confrontation or becoming separated from the group in an unfamiliar area.<br><br>
-
-          <strong>Step 2 — Check what was taken.</strong> Identify exactly what is missing — phone, wallet, passport, or cards — so you can report accurately.<br><br>
-
-          <strong>Step 3 — Call your Tauck Director immediately.</strong> They have handled this before and will guide you through the local process. Tauck 24-hour line: <a href="tel:18004682825">1-800-468-2825</a>.<br><br>
-
-          <strong>Step 4 — Cancel your cards right away.</strong> Call your bank or use your banking app the moment you realize a card is missing. Do not wait until after the police report.<br><br>
-
-          <strong>Step 5 — File a police report (Denuncia).</strong> Go to the nearest Polizia di Stato station and file a formal written report — this is called a <em>denuncia</em>. You will need this document to make any insurance claim, replace a passport, or dispute fraudulent card charges. Ask your Tauck Director or hotel concierge to assist with translation if needed.<br><br>
-
-          <strong>Step 6 — If your passport was stolen</strong>, contact the nearest U.S. Embassy or Consulate (numbers above) to begin emergency passport replacement. Bring your police report, a photocopy of your passport photo page (which you should have kept separate), and a passport-style photo if possible.<br><br>
-
-          <strong>Step 7 — File a travel insurance claim.</strong> Contact CareFree Travel Assistance at <a href="tel:18002086173">1-800-208-6173</a> and file a claim at <a href="https://www.aontravelclaim.com" target="_blank" rel="noopener noreferrer">aontravelclaim.com</a>. Keep all receipts and the police report number.
-        </p>
-      </div>
-    </div>
-
-    
-    <div class="ess-card" style="border-color: var(--olive-border); background: var(--olive-bg);">
-      <span class="ess-icon" aria-hidden="true">🛡️</span>
-      <div>
-        <p class="ess-title">Pickpocket Prevention Tips</p>
-        <p class="ess-detail">
-          <strong>Wallets &amp; phones:</strong> Keep them in a front pocket or a zipped interior bag pocket — never a back pocket or an open bag.<br><br>
-          <strong>Bags:</strong> Wear crossbody bags in front of your body in crowded areas. Do not hang a bag on the back of your chair at a restaurant.<br><br>
-          <strong>Passports:</strong> Leave your actual passport in the hotel safe. Carry a photocopy — it is accepted at most museums and sites and cannot be stolen for travel fraud.<br><br>
-          <strong>Distractions:</strong> Be alert if someone approaches you with a petition, drops something near you, or causes a commotion — these are common distraction techniques used by pickpocket teams.<br><br>
-          <strong>Cards:</strong> Only carry the cards you need for the day. Leave extras locked at the hotel. Consider carrying a small amount of emergency cash separately from your main wallet.<br><br>
-          <strong>Crowds:</strong> Extra vigilance on public transport, escalators, and at popular monuments — these are the highest-risk moments. Keep hands on your belongings when moving through tight spaces.
-        </p>
-      </div>
-    </div>
-
-    
-    <div class="ess-card" style="border-color: #c04040; background: #fdf4f4;">
-      <span class="ess-icon" aria-hidden="true">🏥</span>
-      <div>
-        <p class="ess-title">If Someone Has a Medical Emergency</p>
-        <p class="ess-detail">
-          <strong>Step 1 — Call 118</strong> (Italian ambulance) or <strong>112</strong> immediately for any serious medical emergency. State your location as clearly as possible — use the hotel address or the nearest landmark.<br><br>
-          <strong>Step 2 — Contact your Tauck Director.</strong> They will coordinate with local health authorities and notify Tauck's support team on your behalf.<br><br>
-          <strong>Step 3 — Contact CareFree Travel Assistance.</strong> US: <a href="tel:18002086173">1-800-208-6173</a> &nbsp;·&nbsp; International collect: <a href="tel:+18178267005">+1-817-826-7005</a>. They coordinate medical consultations, local hospital referrals, and emergency evacuation if required.<br><br>
-          <strong>Step 4 — Document everything.</strong> Request a written report from the treating physician and keep all receipts. These are required to file your travel insurance claim with Aon at <a href="https://www.aontravelclaim.com" target="_blank" rel="noopener noreferrer">aontravelclaim.com</a>.<br><br>
-          <strong>Note:</strong> Italian public hospitals (Ospedale) are required to treat emergency patients regardless of insurance status. Your travel insurance covers up to $100,000 in medical expenses and up to $500,000 for emergency evacuation.
-        </p>
-      </div>
-    </div>
-
-  </div>
 </div>
-```
 
-  </div>
+<div id="panel-hotels" class="tab-panel" role="tabpanel" aria-labelledby="tab-hotels">
+<div class="page-section">
+<h2>Accommodations</h2>
+<div class="section-rule" aria-hidden="true"></div>
+<article class="hotel-card" aria-labelledby="hh-rome">
+<div class="hotel-head"><h3 id="hh-rome">Aleph Rome Hotel – Curio by Hilton</h3><p class="hotel-dates">Sunday, June 28 → Wednesday, July 1 &nbsp;·&nbsp; 3 Nights</p></div>
+<div class="hotel-body">
+<p class="hotel-row"><span class="hotel-row-icon" aria-hidden="true">📍</span>Via di San Basilio 15, 00187 Roma, Italy</p>
+<p class="hotel-row"><span class="hotel-row-icon" aria-hidden="true">📞</span><a href="tel:+390642290011">+39 06 4229001</a></p>
+<p class="hotel-row"><span class="hotel-row-icon" aria-hidden="true">🕒</span>Check-in: 3:00 PM &nbsp;·&nbsp; Check-out: 12:00 noon</p>
+<p class="hotel-row"><span class="hotel-row-icon" aria-hidden="true">☕</span>Breakfast included &nbsp;·&nbsp; Reservation guaranteed for late arrival</p>
+<a href="https://www.google.com/maps/search/Aleph+Rome+Hotel+Curio+Hilton+Via+San+Basilio" target="_blank" rel="noopener noreferrer" class="hotel-maps-btn" aria-label="Open Aleph Rome Hotel in Google Maps (opens new tab)">📍 Open in Google Maps</a>
+</div>
+</article>
+<article class="hotel-card" aria-labelledby="hh-florence">
+<div class="hotel-head"><h3 id="hh-florence">The Excelsior Florence</h3><p class="hotel-dates">Wednesday, July 1 → Saturday, July 4 &nbsp;·&nbsp; 3 Nights</p></div>
+<div class="hotel-body">
+<p class="hotel-row"><span class="hotel-row-icon" aria-hidden="true">📍</span>Piazza Ognissanti 3, Florence 50123, Italy</p>
+<p class="hotel-row"><span class="hotel-row-icon" aria-hidden="true">📞</span><a href="tel:+3905527151">+39 055 27151</a></p>
+<p class="hotel-row"><span class="hotel-row-icon" aria-hidden="true">🚶</span>Short walk to Piazza della Signoria and the Uffizi Gallery</p>
+<a href="https://www.google.com/maps/search/Excelsior+Florence+Piazza+Ognissanti" target="_blank" rel="noopener noreferrer" class="hotel-maps-btn" aria-label="Open The Excelsior Florence in Google Maps (opens new tab)">📍 Open in Google Maps</a>
+</div>
+</article>
+<article class="hotel-card" aria-labelledby="hh-venice">
+<div class="hotel-head"><h3 id="hh-venice">JW Marriott Venice Resort</h3><p class="hotel-dates">Saturday, July 4 → Monday, July 6 &nbsp;·&nbsp; 2 Nights</p></div>
+<div class="hotel-body">
+<p class="hotel-row"><span class="hotel-row-icon" aria-hidden="true">📍</span>Isola delle Rose–Sacca Sessola, Laguna di San Marco, 30133 Venezia, Italy</p>
+<p class="hotel-row"><span class="hotel-row-icon" aria-hidden="true">📞</span><a href="tel:+390418521300">+39 041 852 1300</a></p>
+<p class="hotel-row"><span class="hotel-row-icon" aria-hidden="true">⛵</span>Private island resort — access by water taxi from Venice</p>
+<a href="https://www.google.com/maps/search/JW+Marriott+Venice+Resort+Sacca+Sessola" target="_blank" rel="noopener noreferrer" class="hotel-maps-btn" aria-label="Open JW Marriott Venice Resort in Google Maps (opens new tab)">📍 Open in Google Maps</a>
+</div>
+</article>
+</div>
+</div>
+
+<div id="panel-info" class="tab-panel" role="tabpanel" aria-labelledby="tab-info">
+<div class="page-section">
+<h2>Trip Essentials</h2>
+<div class="section-rule" aria-hidden="true"></div>
+<div class="essentials-list">
+<div class="ess-card"><span class="ess-icon" aria-hidden="true">📞</span><div><p class="ess-title">Italy Car Service — Emergency</p><p class="ess-detail">Marco Tonnicchia Car Service: <a href="tel:+393358423187">+39 335 842 3187</a> (24 hours). State you are traveling with Tauck when you call.</p></div></div>
+<div class="ess-card"><span class="ess-icon" aria-hidden="true">📞</span><div><p class="ess-title">Tauck 24-Hour Line</p><p class="ess-detail">US &amp; Canada: <a href="tel:18004682825">1-800-468-2825</a> &nbsp;·&nbsp; International: <a href="tel:0012038996500">001-203-899-6500</a></p></div></div>
+<div class="ess-card"><span class="ess-icon" aria-hidden="true">🏥</span><div><p class="ess-title">CareFree Travel Assistance — Medical</p><p class="ess-detail">US: <a href="tel:18002086173">1-800-208-6173</a> &nbsp;·&nbsp; International collect: <a href="tel:+18178267005">+1-817-826-7005</a> &nbsp;·&nbsp; <a href="mailto:CareFreeAssistance@LiveTravel.com">CareFreeAssistance@LiveTravel.com</a></p></div></div>
+<div class="ess-card"><span class="ess-icon" aria-hidden="true">📋</span><div><p class="ess-title">Travel Insurance Claims</p><p class="ess-detail"><a href="https://www.aontravelclaim.com" target="_blank" rel="noopener noreferrer">www.aontravelclaim.com</a> — file or check claim status online anytime.</p></div></div>
+<div class="ess-card"><span class="ess-icon" aria-hidden="true">🛂</span><div><p class="ess-title">European Entry System (EES)</p><p class="ess-detail">Active since October 2025. First-time Schengen entry requires fingerprints, photo, and passport scan. No advance application or fee needed. Allow extra time at passport control.</p></div></div>
+<div class="ess-card"><span class="ess-icon" aria-hidden="true">🎟️</span><div><p class="ess-title">Venice Overnight Guest Fee Exemption</p><p class="ess-detail">Overnight guests are exempt from the €5 day-visitor fee but need a free QR code at <a href="https://cda.veneziaunica.it/en" target="_blank" rel="noopener noreferrer">cda.veneziaunica.it/en</a>. Your Tauck Director can also help before Venice.</p></div></div>
+<div class="ess-card"><span class="ess-icon" aria-hidden="true">👗</span><div><p class="ess-title">Church Dress Code — All Churches in Italy</p><p class="ess-detail">Knees and shoulders must be covered to enter any church. Strictly enforced at St. Peter's Basilica — no shorts or tank tops. A lightweight scarf in your bag solves the problem easily.</p></div></div>
+<div class="ess-card"><span class="ess-icon" aria-hidden="true">👟</span><div><p class="ess-title">Footwear — Very Important</p><p class="ess-detail">This tour is Level 3 of 4 for activity. Expect 2–3 miles of walking daily on cobblestones and uneven terrain. Wear comfortable, well broken-in shoes. Do not bring new ones.</p></div></div>
+<div class="ess-card"><span class="ess-icon" aria-hidden="true">👜</span><div><p class="ess-title">Luggage Allowance (Tauck)</p><p class="ess-detail">One checked bag per person &nbsp;·&nbsp; Max 50 lbs (23 kg) &nbsp;·&nbsp; Max 62 inches total dimensions. Also verify your airline's own baggage policy separately.</p></div></div>
+<div class="ess-card"><span class="ess-icon" aria-hidden="true">💶</span><div><p class="ess-title">Currency</p><p class="ess-detail">Italy uses the Euro (€). Check current rates at <a href="https://www.xe.com" target="_blank" rel="noopener noreferrer">xe.com</a>. Cards are widely accepted — carry some cash for small purchases and markets.</p></div></div>
+<div class="ess-card"><span class="ess-icon" aria-hidden="true">🕐</span><div><p class="ess-title">Time Zone</p><p class="ess-detail">Italy is 6 hours ahead of Eastern Time in summer (UTC+2, CEST). If it's 9:00 AM in New York, it's 3:00 PM in Rome.</p></div></div>
+<div class="ess-card"><span class="ess-icon" aria-hidden="true">🌡️</span><div><p class="ess-title">Weather — Late June &amp; Early July</p><p class="ess-detail">Hot and sunny. Daily highs average 78–85°F and often exceed 90°F. Pack light breathable clothing, a hat, sunscreen, and a small umbrella. Check <a href="https://weather.com" target="_blank" rel="noopener noreferrer">weather.com</a> before departure.</p></div></div>
+<div class="ess-card"><span class="ess-icon" aria-hidden="true">🔌</span><div><p class="ess-title">Electrical Adapters</p><p class="ess-detail">Italy uses 240V power with Type F/L outlets. Bring a universal travel adapter. Any personal hair dryer must be dual-voltage (100–240V).</p></div></div>
+<div class="ess-card"><span class="ess-icon" aria-hidden="true">🌐</span><div><p class="ess-title">Hotel Wi-Fi</p><p class="ess-detail">Basic complimentary Wi-Fi available at all three hotels. Speed and reliability may vary by property.</p></div></div>
+
+<div style="margin-top: 24px; margin-bottom: 4px; padding-bottom: 10px; border-bottom: 3px solid var(--terra);">
+<h3 style="font-family: 'Playfair Display', Georgia, serif; font-size: 1.3rem; color: var(--ink); font-weight: 700;">🚨 Emergency Guide</h3>
+<p style="font-size: 0.9rem; color: var(--stone); margin-top: 4px;">Keep this page bookmarked. In any emergency, stay calm, stay together, and follow these steps.</p>
+</div>
+
+<div class="ess-card" style="border-color: #c04040; background: #fdf4f4;">
+<span class="ess-icon" aria-hidden="true">🆘</span>
+<div>
+<p class="ess-title">Italian Emergency Numbers</p>
+<p class="ess-detail">
+<strong>112</strong> — Single European Emergency Number (Police, Fire, Ambulance — English operators available)<br>
+<strong>113</strong> — Italian State Police (Polizia di Stato)<br>
+<strong>118</strong> — Medical Emergency &amp; Ambulance<br>
+<strong>115</strong> — Fire Brigade (Vigili del Fuoco)<br>
+<strong>1515</strong> — Environmental Emergency<br><br>
+<strong>Tip:</strong> 112 is the most reliable number to call — it routes to the correct service and English-speaking operators are available 24 hours.
+</p>
+</div>
+</div>
+
+<div class="ess-card" style="border-color: #c04040; background: #fdf4f4;">
+<span class="ess-icon" aria-hidden="true">🇺🇸</span>
+<div>
+<p class="ess-title">U.S. Embassy &amp; Consulates — Italy</p>
+<p class="ess-detail">
+<strong>U.S. Embassy Rome:</strong> Via Vittorio Veneto 121 &nbsp;·&nbsp; <a href="tel:+3906-46741">+39 06 46741</a><br>
+<strong>U.S. Consulate Florence:</strong> Lungarno Vespucci 38 &nbsp;·&nbsp; <a href="tel:+39055-266-951">+39 055 266 951</a><br>
+<strong>U.S. Consulate Milan (nearest to Venice):</strong> Via Principe Amedeo 2/10 &nbsp;·&nbsp; <a href="tel:+3902-290351">+39 02 290351</a><br><br>
+<strong>After-hours emergencies:</strong> Call the main Rome Embassy number above and follow the prompts for the American Citizen Services emergency line.
+</p>
+</div>
+</div>
+
+<div class="ess-card" style="border-color: #c09820; background: var(--warn-bg);">
+<span class="ess-icon" aria-hidden="true">🕵️</span>
+<div>
+<p class="ess-title">If You Are Pickpocketed — Step by Step</p>
+<p class="ess-detail">
+Pickpocketing is the most common crime targeting tourists in Rome, Florence, and Venice. High-risk areas include the Colosseum, Vatican, train stations, crowded markets, and public transport. If it happens, here is exactly what to do:<br><br>
+
+<strong>Step 1 — Stay calm and stay together.</strong> Do not chase the pickpocket. It is not worth the risk of confrontation or becoming separated from the group in an unfamiliar area.<br><br>
+
+<strong>Step 2 — Check what was taken.</strong> Identify exactly what is missing — phone, wallet, passport, or cards — so you can report accurately.<br><br>
+
+<strong>Step 3 — Call your Tauck Director immediately.</strong> They have handled this before and will guide you through the local process. Tauck 24-hour line: <a href="tel:18004682825">1-800-468-2825</a>.<br><br>
+
+<strong>Step 4 — Cancel your cards right away.</strong> Call your bank or use your banking app the moment you realize a card is missing. Do not wait until after the police report.<br><br>
+
+<strong>Step 5 — File a police report (Denuncia).</strong> Go to the nearest Polizia di Stato station and file a formal written report — this is called a <em>denuncia</em>. You will need this document to make any insurance claim, replace a passport, or dispute fraudulent card charges. Ask your Tauck Director or hotel concierge to assist with translation if needed.<br><br>
+
+<strong>Step 6 — If your passport was stolen</strong>, contact the nearest U.S. Embassy or Consulate (numbers above) to begin emergency passport replacement. Bring your police report, a photocopy of your passport photo page (which you should have kept separate), and a passport-style photo if possible.<br><br>
+
+<strong>Step 7 — File a travel insurance claim.</strong> Contact CareFree Travel Assistance at <a href="tel:18002086173">1-800-208-6173</a> and file a claim at <a href="https://www.aontravelclaim.com" target="_blank" rel="noopener noreferrer">aontravelclaim.com</a>. Keep all receipts and the police report number.
+
+</p>
+</div>
+</div>
+
+<div class="ess-card" style="border-color: var(--olive-border); background: var(--olive-bg);">
+<span class="ess-icon" aria-hidden="true">🛡️</span>
+<div>
+<p class="ess-title">Pickpocket Prevention Tips</p>
+<p class="ess-detail">
+<strong>Wallets &amp; phones:</strong> Keep them in a front pocket or a zipped interior bag pocket — never a back pocket or an open bag.<br><br>
+<strong>Bags:</strong> Wear crossbody bags in front of your body in crowded areas. Do not hang a bag on the back of your chair at a restaurant.<br><br>
+<strong>Passports:</strong> Leave your actual passport in the hotel safe. Carry a photocopy — it is accepted at most museums and sites and cannot be stolen for travel fraud.<br><br>
+<strong>Distractions:</strong> Be alert if someone approaches you with a petition, drops something near you, or causes a commotion — these are common distraction techniques used by pickpocket teams.<br><br>
+<strong>Cards:</strong> Only carry the cards you need for the day. Leave extras locked at the hotel. Consider carrying a small amount of emergency cash separately from your main wallet.<br><br>
+<strong>Crowds:</strong> Extra vigilance on public transport, escalators, and at popular monuments — these are the highest-risk moments. Keep hands on your belongings when moving through tight spaces.
+</p>
+</div>
+</div>
+
+<div class="ess-card" style="border-color: #c04040; background: #fdf4f4;">
+<span class="ess-icon" aria-hidden="true">🏥</span>
+<div>
+<p class="ess-title">If Someone Has a Medical Emergency</p>
+<p class="ess-detail">
+<strong>Step 1 — Call 118</strong> (Italian ambulance) or <strong>112</strong> immediately for any serious medical emergency. State your location as clearly as possible — use the hotel address or the nearest landmark.<br><br>
+<strong>Step 2 — Contact your Tauck Director.</strong> They will coordinate with local health authorities and notify Tauck's support team on your behalf.<br><br>
+<strong>Step 3 — Contact CareFree Travel Assistance.</strong> US: <a href="tel:18002086173">1-800-208-6173</a> &nbsp;·&nbsp; International collect: <a href="tel:+18178267005">+1-817-826-7005</a>. They coordinate medical consultations, local hospital referrals, and emergency evacuation if required.<br><br>
+<strong>Step 4 — Document everything.</strong> Request a written report from the treating physician and keep all receipts. These are required to file your travel insurance claim with Aon at <a href="https://www.aontravelclaim.com" target="_blank" rel="noopener noreferrer">aontravelclaim.com</a>.<br><br>
+<strong>Note:</strong> Italian public hospitals (Ospedale) are required to treat emergency patients regardless of insurance status. Your travel insurance covers up to $100,000 in medical expenses and up to $500,000 for emergency evacuation.
+</p>
+</div>
+</div>
+
+</div>
+</div>
+</div>
 
 </main>
 
 <footer role="contentinfo">
-  <p>Olivieri Family &nbsp;·&nbsp; Italia Bella: Rome to Venice &nbsp;·&nbsp; June 28 – July 6, 2026</p>
-  <p>Tauck Bridges &nbsp;·&nbsp; <a href="https://www.tauck.com" target="_blank" rel="noopener noreferrer">tauck.com</a></p>
+<p>Olivieri Family &nbsp;·&nbsp; Italia Bella: Rome to Venice &nbsp;·&nbsp; June 28 – July 6, 2026</p>
+<p>Tauck Bridges &nbsp;·&nbsp; <a href="https://www.tauck.com" target="_blank" rel="noopener noreferrer">tauck.com</a></p>
 </footer>
 
 <script>
